@@ -20,10 +20,14 @@ private Animator animator;
 
       void FixedUpdate()
     {
-        float moveX = 0f;
-        float moveY = 0f;
-        if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
-            moveY = +1f;
+        float moveX = Input.GetAxis("Horizontal");
+        float moveY = Input.GetAxis("Vertical");
+
+        animator.SetFloat("DireccaoX", moveX);
+        animator.SetFloat("DireccaoY", moveY);
+
+     /*
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
             animator.SetFloat("DireccaoY",1);
         }if(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)){
             moveY = -1f;
@@ -36,8 +40,8 @@ private Animator animator;
              moveX = +1f;
         }
         
-
-         Vector3 moveDir = new Vector3(moveX,moveY).normalized;
+     */
+         Vector3 moveDir = new Vector3(moveX, 0).normalized;
          transform.position += moveDir *speed * Time.deltaTime;
      
     }
