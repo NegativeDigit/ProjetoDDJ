@@ -17,8 +17,248 @@ TextureImporter:
   - first:
       213: 4366178942990776957
     second: Wall Jump (32x32)_4
+  - first:
+      213: 2766713357420885252
+    second: Wall Jump (32x32)_0
+  - first:
+      213: -3460039449195670458
+    second: Wall Jump (32x32)_1
+  - first:
+      213: 4145127948566479010
+    second: Wall Jump (32x32)_2
+  - first:
+      213: 1039367289128163884
+    second: Wall Jump (32x32)_3
+  - first:
+      213: 1806294656112824759
+    second: Wall Jump (32x32)_4
+  - first:
+      213: 5233434129579461209
+    second: Wall Jump (32x32)_5
+  - first:
+      213: 9044673401041736703
+    second: Wall Jump (32x32)_6
+  - first:
+      213: 7272809265509978060
+    second: Wall Jump (32x32)_7
+  - first:
+      213: 2144753906059387410
+    second: Wall Jump (32x32)_8
+  - first:
+      213: -4218407651445933696
+    second: Wall Jump (32x32)_9
+  - first:
+      213: -4175841170356708398
+    second: Wall Jump (32x32)_10
+  - first:
+      213: -5816982440270383614
+    second: Wall Jump (32x32)_11
+  - first:
+      213: -3600333673170006352
+    second: Wall Jump (32x32)_12
+  - first:
+      213: -8151288437952834286
+    second: Wall Jump (32x32)_13
+  - first:
+      213: -125248968583459875
+    second: Wall Jump (32x32)_14
+  - first:
+      213: -834690087862782377
+    second: Wall Jump (32x32)_15
+  - first:
+      213: -5211610735147258321
+    second: Wall Jump (32x32)_16
+  - first:
+      213: -3597204970970458831
+    second: Wall Jump (32x32)_17
+  - first:
+      213: 7676256286862114814
+    second: Wall Jump (32x32)_18
+  - first:
+      213: 8687274519721995582
+    second: Wall Jump (32x32)_19
+  - first:
+      213: 8237708239715596854
+    second: Wall Jump (32x32)_20
+  - first:
+      213: 1401750365283265503
+    second: Wall Jump (32x32)_21
+  - first:
+      213: 3440490780594883328
+    second: Wall Jump (32x32)_22
+  - first:
+      213: 4400400296551506449
+    second: Wall Jump (32x32)_23
+  - first:
+      213: -5514133024425522962
+    second: Wall Jump (32x32)_24
+  - first:
+      213: -3527395897131061502
+    second: Wall Jump (32x32)_25
+  - first:
+      213: -169970802515706952
+    second: Wall Jump (32x32)_26
+  - first:
+      213: 6724047688057485529
+    second: Wall Jump (32x32)_27
+  - first:
+      213: -7763922849729500502
+    second: Wall Jump (32x32)_28
+  - first:
+      213: -1601494169701856199
+    second: Wall Jump (32x32)_29
+  - first:
+      213: -1181638430979446028
+    second: Wall Jump (32x32)_30
+  - first:
+      213: -7600621030208311755
+    second: Wall Jump (32x32)_31
+  - first:
+      213: 4477654223760740442
+    second: Wall Jump (32x32)_32
+  - first:
+      213: 6966573150196632323
+    second: Wall Jump (32x32)_33
+  - first:
+      213: 3159643715635821735
+    second: Wall Jump (32x32)_34
+  - first:
+      213: -1717619086230711036
+    second: Wall Jump (32x32)_35
+  - first:
+      213: 7365794036454818347
+    second: Wall Jump (32x32)_36
+  - first:
+      213: 4988389490086361876
+    second: Wall Jump (32x32)_37
+  - first:
+      213: -1696498622527537005
+    second: Wall Jump (32x32)_38
+  - first:
+      213: 4457170985270437133
+    second: Wall Jump (32x32)_39
+  - first:
+      213: 4781444542059188072
+    second: Wall Jump (32x32)_40
+  - first:
+      213: 4368839250883214517
+    second: Wall Jump (32x32)_41
+  - first:
+      213: 6987739388209611699
+    second: Wall Jump (32x32)_42
+  - first:
+      213: -4115711455765712825
+    second: Wall Jump (32x32)_43
+  - first:
+      213: 4073082517401945517
+    second: Wall Jump (32x32)_44
+  - first:
+      213: -4329356355375587854
+    second: Wall Jump (32x32)_45
+  - first:
+      213: -7980990685416933434
+    second: Wall Jump (32x32)_46
+  - first:
+      213: 3519107049586985913
+    second: Wall Jump (32x32)_47
+  - first:
+      213: -6879104498525945526
+    second: Wall Jump (32x32)_48
+  - first:
+      213: 6037454841325538968
+    second: Wall Jump (32x32)_49
+  - first:
+      213: 7737112609839996715
+    second: Wall Jump (32x32)_50
+  - first:
+      213: -756220806804376747
+    second: Wall Jump (32x32)_51
+  - first:
+      213: -5592290376148483673
+    second: Wall Jump (32x32)_52
+  - first:
+      213: 2406699922990984487
+    second: Wall Jump (32x32)_53
+  - first:
+      213: -3912027379933063641
+    second: Wall Jump (32x32)_54
+  - first:
+      213: -1259378367356222667
+    second: Wall Jump (32x32)_55
+  - first:
+      213: -6962260948699743261
+    second: Wall Jump (32x32)_56
+  - first:
+      213: -9210985093097499688
+    second: Wall Jump (32x32)_57
+  - first:
+      213: 1491393458917794426
+    second: Wall Jump (32x32)_58
+  - first:
+      213: 2286003071237877929
+    second: Wall Jump (32x32)_59
+  - first:
+      213: 1850315207743536060
+    second: Wall Jump (32x32)_60
+  - first:
+      213: 4550756093740080343
+    second: Wall Jump (32x32)_61
+  - first:
+      213: -7316359516152575436
+    second: Wall Jump (32x32)_62
+  - first:
+      213: -6197719331138178163
+    second: Wall Jump (32x32)_63
+  - first:
+      213: 1227628994986726681
+    second: Wall Jump (32x32)_64
+  - first:
+      213: 4700768479130400609
+    second: Wall Jump (32x32)_65
+  - first:
+      213: -4388320751818511165
+    second: Wall Jump (32x32)_66
+  - first:
+      213: 9189945948411626796
+    second: Wall Jump (32x32)_67
+  - first:
+      213: 2366293120748261089
+    second: Wall Jump (32x32)_68
+  - first:
+      213: -6656683306934598566
+    second: Wall Jump (32x32)_69
+  - first:
+      213: 4111273169087969235
+    second: Wall Jump (32x32)_70
+  - first:
+      213: 3707151659246197549
+    second: Wall Jump (32x32)_71
+  - first:
+      213: -5529657668440728334
+    second: Wall Jump (32x32)_72
+  - first:
+      213: -1821613539670600589
+    second: Wall Jump (32x32)_73
+  - first:
+      213: -2985641397569033288
+    second: Wall Jump (32x32)_74
+  - first:
+      213: -4914992976940861626
+    second: Wall Jump (32x32)_75
+  - first:
+      213: -8709857376179170991
+    second: Wall Jump (32x32)_76
+  - first:
+      213: -679432553390954420
+    second: Wall Jump (32x32)_77
+  - first:
+      213: -4233644342185418458
+    second: Wall Jump (32x32)_78
+  - first:
+      213: -312671316741926130
+    second: Wall Jump (32x32)_79
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +312,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -115,8 +356,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c00c8946edce6344a87b30fcea22e8a9
-      internalID: 3974224528455760076
+      spriteID: 4057660d327556620800000000000000
+      internalID: 2766713357420885252
       vertices: []
       indices: 
       edges: []
@@ -136,8 +377,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4776cde5de2067348b7619ffca8c5a41
-      internalID: 403085039841989221
+      spriteID: 6449ad9f3787bffc0800000000000000
+      internalID: -3460039449195670458
       vertices: []
       indices: 
       edges: []
@@ -157,8 +398,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0300542db92406a43ac5273ddd9cfe9c
-      internalID: -6018873884784744797
+      spriteID: 2a049da48e3768930800000000000000
+      internalID: 4145127948566479010
       vertices: []
       indices: 
       edges: []
@@ -178,8 +419,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35a26961c8377114883f9bc484f35e11
-      internalID: -674972067355074983
+      spriteID: c2a15abea039c6e00800000000000000
+      internalID: 1039367289128163884
       vertices: []
       indices: 
       edges: []
@@ -199,8 +440,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74fb40e98c3d03246b027eb716cf4b4f
-      internalID: 4366178942990776957
+      spriteID: 7b19a496b6f311910800000000000000
+      internalID: 1806294656112824759
       vertices: []
       indices: 
       edges: []
