@@ -1602,12 +1602,15 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -6.4716268, y: 4.369748}
+  - {x: 6.5169063, y: 4.080867}
+  - {x: 6.092326, y: 4.1114535}
+  - {x: 6.0597076, y: 4.4903936}
+  - {x: -6.402226, y: 4.4733167}
   - {x: -6.4689193, y: -4.0571604}
   - {x: -6.1059756, y: -4.051974}
   - {x: -6.062937, y: -4.4302998}
   - {x: 6.476121, y: -4.473927}
-  - {x: 6.5173287, y: 3.8524852}
+  - {x: 6.51733, y: 4.0691466}
 --- !u!1 &153343987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,7 +2028,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c702e6c82a6fa8744a8fbd10d4bbe576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swingForce: 4
   speed: 5
+  jumpSpeed: 3
+  ropeHook: {x: 0, y: 0}
+  isSwinging: 0
+  groundCheck: 0
 --- !u!61 &1132942419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2067,7 +2075,7 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.9525996, y: -1.1007816}
+  m_ConnectedAnchor: {x: 0, y: -0.0000000143240655}
   m_AutoConfigureDistance: 0
   m_Distance: 0.005
   m_MaxDistanceOnly: 0
@@ -2083,15 +2091,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 484c0d2e2801d054db189b947f9cbdbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ropeRenderer: {fileID: 1132942422}
+  ropeLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  climbSpeed: 3
   ropeHingeAnchor: {fileID: 1862404117}
   ropeJoint: {fileID: 1132942420}
   crosshair: {fileID: 1531083824}
   crosshairSprite: {fileID: 1531083823}
   playerMovement: {fileID: 1132942418}
-  ropeRenderer: {fileID: 1132942422}
-  ropeLayerMask:
-    serializedVersion: 2
-    m_Bits: 4096
 --- !u!120 &1132942422
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2178,7 +2187,7 @@ LineRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 0
+      m_Mode: 1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
