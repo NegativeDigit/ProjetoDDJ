@@ -124,14 +124,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.name =="Trophy")
-        GameObject.Find("GameManager").GetComponent<GameManager>().CompleteLevel();
-
-        if(collision.gameObject.layer ==12)//map
-            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
-
-            if(collision.gameObject.layer ==14)// lava
-            GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
+        GameObject.Find("Player") .GetComponent<PlayerMovement>().enabled = true;
 
     }
 
