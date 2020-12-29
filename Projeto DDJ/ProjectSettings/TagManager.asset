@@ -18,7 +18,7 @@ TagManager:
   - Forground
   - Rope
   - Map
-  - 
+  - Trophy
   - 
   - 
   - 
@@ -47,6 +47,12 @@ TagManager:
   - name: Player
     uniqueID: 1715341091
     locked: 0
+  - name: Trophy
+    uniqueID: 2419296871
+    locked: 0
   - name: Forground
     uniqueID: 2463415621
+    locked: 0
+  - name: Map
+    uniqueID: 2673839693
     locked: 0

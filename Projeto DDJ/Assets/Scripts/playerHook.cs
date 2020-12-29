@@ -200,8 +200,8 @@ public class PlayerHook : MonoBehaviour
             crosshairSprite.enabled = true;
         }
 
-        var x = transform.position.x + 1f * Mathf.Cos(aimAngle);
-        var y = transform.position.y + 1f * Mathf.Sin(aimAngle);
+        var x = transform.position.x + 2f * Mathf.Cos(aimAngle);
+        var y = transform.position.y + 2f * Mathf.Sin(aimAngle);
 
         var crossHairPosition = new Vector3(x, y, 0);
         crosshair.transform.position = crossHairPosition;

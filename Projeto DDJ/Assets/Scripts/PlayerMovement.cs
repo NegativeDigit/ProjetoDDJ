@@ -29,6 +29,7 @@
  */
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -117,6 +118,21 @@ public class PlayerMovement : MonoBehaviour
             {
                 rBody.velocity = new Vector2(rBody.velocity.x, jumpSpeed);
             }
+        }
+
+        DeathFallFunction();
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("ola");
+    }
+
+    void DeathFallFunction()
+    {
+        if(gameObject.transform.position.y <= GameObject.Find("background0").transform.position.y - 10)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

@@ -5,9 +5,16 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform player;
+    public Vector3 boundsMax;
+ public Vector3 boundsMin;
     void Update () 
     {
-        transform.position = new Vector3 (player.position.x, player.position.y+2, player.position.z-3); // Camera follows the player but 6 to the right
+        if(player.position.x >  8  && player.position.x <  GameObject.Find("background3").transform.position.x-20)
+         transform.position = new Vector3 (player.position.x, transform.position.y, transform.position.z);
+        if(player.position.y >  GameObject.Find("background0").transform.position.y && player.position.y <  GameObject.Find("background3").transform.position.y)
+        transform.position = new Vector3 (transform.position.x, player.position.y, transform.position.z);
+        
+         //transform.position = new Vector3 (Mathf.Clamp (transform.position.x, boundsMin.x, boundsMax.x), Mathf.Clamp (transform.position.y, boundsMin.y, boundsMax.y), Mathf.Clamp (transform.position.z, boundsMin.z, boundsMax.z));
     }
     // Start is called before the first frame update
     void Start()
