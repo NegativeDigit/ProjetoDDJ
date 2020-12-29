@@ -120,19 +120,20 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        DeathFallFunction();
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("ola");
+        if(collision.gameObject.name =="Trophy")
+        GameObject.Find("GameManager").GetComponent<GameManager>().CompleteLevel();
+
+        if(collision.gameObject.layer ==12)//map
+            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
+
+            if(collision.gameObject.layer ==14)// lava
+            GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
+
     }
 
-    void DeathFallFunction()
-    {
-        if(gameObject.transform.position.y <= GameObject.Find("background0").transform.position.y - 10)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }
+    
 }

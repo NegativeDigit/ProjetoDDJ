@@ -101,6 +101,7 @@ public class PlayerHook : MonoBehaviour
             playerMovement.isSwinging = true;
             playerMovement.ropeHook = ropePositions.Last();
             crosshairSprite.enabled = false;
+            
 
             // Wrap rope around points of colliders if there are raycast collisions between player position and their closest current wrap around collider / angle point.
 	        if (ropePositions.Count > 0)
@@ -169,7 +170,9 @@ public class PlayerHook : MonoBehaviour
 
         if (Input.GetMouseButton(1) || Input.GetKeyDown("space"))
         {
+            GameObject.Find("Player") .GetComponent<PlayerMovement>().enabled = false;
             ResetRope();
+           
         }
     }
 
@@ -187,6 +190,7 @@ public class PlayerHook : MonoBehaviour
         ropePositions.Clear();
         wrapPointsLookup.Clear();
         ropeHingeAnchorSprite.enabled = false;
+        
     }
 
     /// <summary>
@@ -285,10 +289,12 @@ public class PlayerHook : MonoBehaviour
     void OnTriggerStay2D(Collider2D colliderStay)
     {
         isColliding = true;
+        
     }
 
     private void OnTriggerExit2D(Collider2D colliderOnExit)
     {
         isColliding = false;
+        
     }
 }
