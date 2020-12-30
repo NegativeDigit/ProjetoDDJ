@@ -6,7 +6,7 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform player;
     public Vector3 boundsMax;
- public Vector3 boundsMin;
+    public Vector3 boundsMin;
     void Update () 
     {
         if(player.position.x >  boundsMin.x  && player.position.x <  boundsMax.x-10)
@@ -19,7 +19,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //transform.position.
     }
 
 
