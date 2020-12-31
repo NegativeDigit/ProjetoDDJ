@@ -192,7 +192,7 @@ public class PlayerHook : MonoBehaviour
         
     }
 
-    /// <summary>
+     /// <summary>
     /// Move the aiming crosshair based on aim angle
     /// </summary>
     /// <param name="aimAngle">The mouse aiming angle</param>
@@ -202,12 +202,21 @@ public class PlayerHook : MonoBehaviour
         {
             crosshairSprite.enabled = true;
         }
-
+      
         var x = transform.position.x + ropeMaxCastDistance * Mathf.Cos(aimAngle);
         var y = transform.position.y + ropeMaxCastDistance * Mathf.Sin(aimAngle);
-
         var crossHairPosition = new Vector3(x, y, 0);
-        crosshair.transform.position = crossHairPosition;
+        Vector2 screenPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+        var mousePosition = new Vector3( worldPosition.x, worldPosition.y, 0);
+        var distMouse = Vector3.Distance(mousePosition,transform.position);
+        if(distMouse < ropeMaxCastDistance)
+                crosshair.transform.position = mousePosition;
+                else
+                {
+                    crosshair.transform.position = crossHairPosition;
+                }
+        
     }
 
     /// <summary>
