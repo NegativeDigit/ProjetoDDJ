@@ -45,12 +45,14 @@ public class PlayerHook : MonoBehaviour
     private bool ropeAttached;
     private Vector2 playerPosition;
     private List<Vector2> ropePositions = new List<Vector2>();
-    private float ropeMaxCastDistance = 20f;
+    public float ropeMaxCastDistance = 5f;
+
     private Rigidbody2D ropeHingeAnchorRb;
     private bool distanceSet;
     private bool isColliding;
     private Dictionary<Vector2, int> wrapPointsLookup = new Dictionary<Vector2, int>();
     private SpriteRenderer ropeHingeAnchorSprite;
+    
 
     void Awake ()
     {
@@ -90,10 +92,11 @@ public class PlayerHook : MonoBehaviour
 
         var aimDirection = Quaternion.Euler(0, 0, aimAngle * Mathf.Rad2Deg) * Vector2.right;
         playerPosition = transform.position;
+        SetCrosshairPosition(aimAngle);
 
         if (!ropeAttached)
         {
-            SetCrosshairPosition(aimAngle);
+            
             playerMovement.isSwinging = false;
 	    }
 	    else
@@ -129,25 +132,17 @@ public class PlayerHook : MonoBehaviour
             }
         }
 
-	    UpdateRopePositions();
-        HandleRopeLength();
-        HandleInput(aimDirection);
-	}
-
-    /// <summary>
-    /// Handles input within the RopeSystem component
-    /// </summary>
-    /// <param name="aimDirection">The current direction for aiming based on mouse position</param>
-    private void HandleInput(Vector2 aimDirection)
-    {
         if (Input.GetMouseButton(0))
         {
-            if (ropeAttached) return;
+            if(!ropeAttached){
+              
             ropeRenderer.enabled = true;
-
+            crosshairSprite.enabled = false;
+            
             var hit = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, ropeLayerMask);
             if (hit.collider != null)
             {
+                GameObject.Find("Player") .GetComponent<PlayerMovement>().enabled = true;
                 ropeAttached = true;
                 if (!ropePositions.Contains(hit.point))
                 {
@@ -166,15 +161,19 @@ public class PlayerHook : MonoBehaviour
                 ropeAttached = false;
                 ropeJoint.enabled = false;
             }
-        }
-
-        if (Input.GetMouseButton(1) || Input.GetKeyDown("space"))
-        {
+            }
+            
+        }else if(Input.GetMouseButtonUp(0)){
+            if(ropeAttached)
             GameObject.Find("Player") .GetComponent<PlayerMovement>().enabled = false;
             ResetRope();
-           
         }
-    }
+
+	    UpdateRopePositions();
+        HandleRopeLength();
+	}
+
+    
 
     /// <summary>
     /// Resets the rope in terms of gameplay, visual, and supporting variable values.
@@ -204,8 +203,8 @@ public class PlayerHook : MonoBehaviour
             crosshairSprite.enabled = true;
         }
 
-        var x = transform.position.x + 2f * Mathf.Cos(aimAngle);
-        var y = transform.position.y + 2f * Mathf.Sin(aimAngle);
+        var x = transform.position.x + ropeMaxCastDistance * Mathf.Cos(aimAngle);
+        var y = transform.position.y + ropeMaxCastDistance * Mathf.Sin(aimAngle);
 
         var crossHairPosition = new Vector3(x, y, 0);
         crosshair.transform.position = crossHairPosition;
@@ -216,14 +215,17 @@ public class PlayerHook : MonoBehaviour
     /// </summary>
     private void HandleRopeLength()
     {
-        if (Input.GetAxis("Vertical") >= 1f && ropeAttached && !isColliding)
+        if ((Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))  && ropeAttached && !isColliding)
         {
+            if(ropeJoint.distance >1f)
             ropeJoint.distance -= Time.deltaTime * climbSpeed;
         }
-        else if (Input.GetAxis("Vertical") < 0f && ropeAttached)
+        else if ((Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow)) && ropeAttached && !isColliding)
         {
+            if(ropeJoint.distance  < ropeMaxCastDistance)
             ropeJoint.distance += Time.deltaTime * climbSpeed;
         }
+       
     }
 
     /// <summary>
