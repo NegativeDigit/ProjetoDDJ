@@ -587,6 +587,11 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -956061459
       objectReference: {fileID: 0}
+    - target: {fileID: 6057870334901469714, guid: 3791fd152e61ffd468b3d3b502b0bd27,
+        type: 3}
+      propertyPath: ropeMaxCastDistance
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469716, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_IsTrigger
@@ -987,7 +992,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1374350557
 PrefabInstance:
@@ -1188,7 +1193,7 @@ Transform:
   m_LocalScale: {x: 1.0878568, y: 0.9949498, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1482942691
 CircleCollider2D:
@@ -1485,7 +1490,7 @@ PrefabInstance:
     - target: {fileID: 281201887030589086, guid: 1e9c9c1ed03f53843a2464f083d27b1b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 281201887030589086, guid: 1e9c9c1ed03f53843a2464f083d27b1b,
         type: 3}
@@ -1564,7 +1569,7 @@ PrefabInstance:
     - target: {fileID: 8181800628952412495, guid: ea26220598548e64684c5e4afc51f3f7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8181800628952412495, guid: ea26220598548e64684c5e4afc51f3f7,
         type: 3}
