@@ -41,7 +41,7 @@ public class PlayerHook : MonoBehaviour
     public DistanceJoint2D ropeJoint;
     public Transform crosshair;
     public SpriteRenderer crosshairSprite;
-    public PlayerMovement playerMovement;
+    private PlayerMovement playerMovement;
     private bool ropeAttached;
     private Vector2 playerPosition;
     private List<Vector2> ropePositions = new List<Vector2>();
@@ -60,6 +60,7 @@ public class PlayerHook : MonoBehaviour
 	    playerPosition = transform.position;
         ropeHingeAnchorRb = ropeHingeAnchor.GetComponent<Rigidbody2D>();
         ropeHingeAnchorSprite = ropeHingeAnchor.GetComponent<SpriteRenderer>();
+        playerMovement = gameObject.GetComponent<PlayerMovement>();
     }
 
     /// <summary>
@@ -132,7 +133,7 @@ public class PlayerHook : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if(!ropeAttached){
               
@@ -142,7 +143,7 @@ public class PlayerHook : MonoBehaviour
             var hit = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, ropeLayerMask);
             if (hit.collider != null)
             {
-                GameObject.Find("Player") .GetComponent<PlayerMovement>().enabled = true;
+                playerMovement.enabled = true;
                 ropeAttached = true;
                 if (!ropePositions.Contains(hit.point))
                 {
@@ -162,11 +163,12 @@ public class PlayerHook : MonoBehaviour
                 ropeJoint.enabled = false;
             }
             }
+            else
+            {
+                playerMovement.enabled = false;
+                ResetRope();
+            }
             
-        }else if(Input.GetMouseButtonUp(0)){
-            if(ropeAttached)
-            GameObject.Find("Player") .GetComponent<PlayerMovement>().enabled = false;
-            ResetRope();
         }
 
 	    UpdateRopePositions();

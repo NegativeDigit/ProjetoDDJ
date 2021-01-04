@@ -10,11 +10,15 @@ public class PlayerPortal : MonoBehaviour
     public GameObject objectToBeCreated;
     private float distance;
     private GameObject obj;
-    public float platformTimer = 3f; 
+    public float platformTimer = 3f;
+    private PlayerMovement playerMovement;
+    private PlayerHook playerHook;
     // Start is called before the first frame update
     void Start()
     {
-        distance = GameObject.Find("Player") .GetComponent<PlayerHook>().ropeMaxCastDistance;
+        playerMovement = gameObject.GetComponent<PlayerMovement>();
+        playerHook = gameObject.GetComponent<PlayerHook>();
+        distance = playerHook.ropeMaxCastDistance;
     }
 
     // Update is called once per frame
@@ -45,6 +49,7 @@ public class PlayerPortal : MonoBehaviour
             StartCoroutine(ExecuteAfterTime(platformTimer));
         } else
         {
+            playerHook.ResetRope();
             StopAllCoroutines();
             obj.transform.position = position;
             StartCoroutine(ExecuteAfterTime(platformTimer));
@@ -60,9 +65,9 @@ public class PlayerPortal : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
 
-        if(GameObject.Find("Player").GetComponent<PlayerHook>().isRopeAttached())
+        if(playerHook.isRopeAttached())
         {
-            GameObject.Find("Player").GetComponent<PlayerHook>().ResetRope();
+            playerHook.ResetRope();
         }
 
         Destroy(obj);
