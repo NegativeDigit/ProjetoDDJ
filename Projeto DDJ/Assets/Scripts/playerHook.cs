@@ -173,12 +173,15 @@ public class PlayerHook : MonoBehaviour
         HandleRopeLength();
 	}
 
-    
+    public bool isRopeAttached()
+    {
+        return ropeAttached;
+    }
 
     /// <summary>
     /// Resets the rope in terms of gameplay, visual, and supporting variable values.
     /// </summary>
-    private void ResetRope()
+    public void ResetRope()
     {
         ropeJoint.enabled = false;
         ropeAttached = false;

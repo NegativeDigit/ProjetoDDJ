@@ -8,7 +8,9 @@ public class PlayerPortal : MonoBehaviour
     public Transform crosshair;
     public SpriteRenderer crosshairSprite;
     public GameObject objectToBeCreated;
-    private float distance; 
+    private float distance;
+    private GameObject obj;
+    public float platformTimer = 3f; 
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +29,7 @@ public class PlayerPortal : MonoBehaviour
             aimAngle = Mathf.PI * 2 + aimAngle;
         }
         SetCrosshairPosition(aimAngle);
-         if (Input.GetKeyDown(KeyCode.Space))
+         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
              CreateObject();
              //crosshairSprite.enabled = false;
@@ -36,16 +38,37 @@ public class PlayerPortal : MonoBehaviour
     
 
     public void CreateObject(){
-       Vector3 position    = new Vector3(crosshair.transform.position.x,crosshair.transform.position.y, crosshair.transform.position.z);
+       Vector3 position    = new Vector3(crosshair.transform.position.x,crosshair.transform.position.y, -0.5f);
         Quaternion rotation = new Quaternion(0,0,0,0);
-        GameObject obj      = Instantiate(objectToBeCreated, position, rotation) as GameObject;
+        if(obj == null) {
+            obj = Instantiate(objectToBeCreated, position, rotation) as GameObject;
+            StartCoroutine(ExecuteAfterTime(platformTimer));
+        } else
+        {
+            StopAllCoroutines();
+            obj.transform.position = position;
+            StartCoroutine(ExecuteAfterTime(platformTimer));
+        }
+       
         obj.layer = 12;
         obj.GetComponent<SpriteRenderer>().sortingOrder = 1;
         obj.transform.localScale = new Vector3(transform.localScale.x/2,transform.localScale.y/3, 0);
        
     }
 
-     /// <summary>
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        if(GameObject.Find("Player").GetComponent<PlayerHook>().isRopeAttached())
+        {
+            GameObject.Find("Player").GetComponent<PlayerHook>().ResetRope();
+        }
+
+        Destroy(obj);
+    }
+
+    /// <summary>
     /// Move the aiming crosshair based on aim angle
     /// </summary>
     /// <param name="aimAngle">The mouse aiming angle</param>
