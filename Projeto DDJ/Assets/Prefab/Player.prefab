@@ -200,9 +200,9 @@ GameObject:
   - component: {fileID: 6057870334901469716}
   - component: {fileID: 6057870334901469715}
   - component: {fileID: 6057870334901469713}
-  - component: {fileID: 6057870334901469714}
   - component: {fileID: 955863276}
   - component: {fileID: 955863277}
+  - component: {fileID: 873053706422844461}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -477,29 +477,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &6057870334901469714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6057870334901469706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 484c0d2e2801d054db189b947f9cbdbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ropeRenderer: {fileID: 6057870334901469713}
-  ropeLayerMask:
-    serializedVersion: 2
-    m_Bits: 4096
-  climbSpeed: 5
-  ropeHingeAnchor: {fileID: 6057870334171323986}
-  ropeJoint: {fileID: 6057870334901469715}
-  crosshair: {fileID: 6057870334511082103}
-  crosshairSprite: {fileID: 6057870334511082088}
-  playerMovement: {fileID: 6057870334901469717}
-  ropeMaxCastDistance: 15
 --- !u!114 &955863276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,3 +505,26 @@ MonoBehaviour:
   crosshairSprite: {fileID: 6057870334511082088}
   objectToBeCreated: {fileID: 6672743673453700370, guid: 6a8519c099927494fb4d89e1bed9b135,
     type: 3}
+  platformTimer: 3
+--- !u!114 &873053706422844461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6057870334901469706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ecc6f922fae0cb4d8f10f53a7e083ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ropeRenderer: {fileID: 6057870334901469713}
+  ropeLayerMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  climbSpeed: 3
+  ropeHingeAnchor: {fileID: 6057870334171323986}
+  ropeJoint: {fileID: 6057870334901469715}
+  crosshair: {fileID: 6057870334511082103}
+  crosshairSprite: {fileID: 6057870334511082088}
+  ropeMaxCastDistance: 15

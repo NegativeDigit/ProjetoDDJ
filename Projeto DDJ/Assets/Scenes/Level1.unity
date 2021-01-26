@@ -202,12 +202,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &116168655 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6057870334171323986, guid: 3791fd152e61ffd468b3d3b502b0bd27,
-    type: 3}
-  m_PrefabInstance: {fileID: 537933922}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &259186828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
@@ -471,7 +465,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.261232
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -523,6 +517,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 873053706422844461, guid: 3791fd152e61ffd468b3d3b502b0bd27,
+        type: 3}
+      propertyPath: ropeLayerMask.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057870334171323985, guid: 3791fd152e61ffd468b3d3b502b0bd27,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057870334171323985, guid: 3791fd152e61ffd468b3d3b502b0bd27,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057870334171323985, guid: 3791fd152e61ffd468b3d3b502b0bd27,
+        type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469706, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_Name
@@ -583,46 +597,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6057870334901469714, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
 --- !u!1 &955863275 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6057870334901469706, guid: 3791fd152e61ffd468b3d3b502b0bd27,
-    type: 3}
-  m_PrefabInstance: {fileID: 537933922}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &955863276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955863275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 484c0d2e2801d054db189b947f9cbdbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ropeRenderer: {fileID: 955863279}
-  ropeLayerMask:
-    serializedVersion: 2
-    m_Bits: 4096
-  climbSpeed: 3
-  ropeHingeAnchor: {fileID: 116168655}
-  ropeJoint: {fileID: 955863280}
-  crosshair: {fileID: 1719078950}
-  crosshairSprite: {fileID: 1719078951}
-  ropeMaxCastDistance: 5
---- !u!120 &955863279 stripped
-LineRenderer:
-  m_CorrespondingSourceObject: {fileID: 6057870334901469713, guid: 3791fd152e61ffd468b3d3b502b0bd27,
-    type: 3}
-  m_PrefabInstance: {fileID: 537933922}
-  m_PrefabAsset: {fileID: 0}
---- !u!232 &955863280 stripped
-DistanceJoint2D:
-  m_CorrespondingSourceObject: {fileID: 6057870334901469715, guid: 3791fd152e61ffd468b3d3b502b0bd27,
     type: 3}
   m_PrefabInstance: {fileID: 537933922}
   m_PrefabAsset: {fileID: 0}
@@ -1132,18 +1111,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 543588740789854366, guid: 126060ed01a723c4dabbd577e5863162,
     type: 3}
   m_PrefabInstance: {fileID: 1374350557}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1719078950 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6057870334511082103, guid: 3791fd152e61ffd468b3d3b502b0bd27,
-    type: 3}
-  m_PrefabInstance: {fileID: 537933922}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &1719078951 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 6057870334511082088, guid: 3791fd152e61ffd468b3d3b502b0bd27,
-    type: 3}
-  m_PrefabInstance: {fileID: 537933922}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1795747543 stripped
 GameObject:
