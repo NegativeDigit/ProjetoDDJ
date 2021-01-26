@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
 
     void DeathFallFunction()
     {
-        if(player.transform.position.y <= lower.transform.position.y - 10)
+        if(lower != null && player.transform.position.y <= lower.transform.position.y - 10)
         {
             FailedLevel();
         }
