@@ -1391,8 +1391,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2712389061111892529, guid: 71359bf7774406d4f9207c95cb7038d3,
         type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712389061111892529, guid: 71359bf7774406d4f9207c95cb7038d3,
+        type: 3}
       propertyPath: startDelay.scalar
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712389061111892529, guid: 71359bf7774406d4f9207c95cb7038d3,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2712389061111892529, guid: 71359bf7774406d4f9207c95cb7038d3,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 2712389061111892531, guid: 71359bf7774406d4f9207c95cb7038d3,
         type: 3}
@@ -3521,7 +3536,7 @@ PrefabInstance:
     - target: {fileID: 873053706422844461, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: ropeLayerMask.m_Bits
-      value: 4096
+      value: 36864
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469706, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
@@ -3556,12 +3571,12 @@ PrefabInstance:
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.02
+      value: -5.3
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: 12.11
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
@@ -9113,7 +9128,7 @@ GameObject:
   - component: {fileID: 712162385}
   - component: {fileID: 712162387}
   - component: {fileID: 712162386}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: New Sprite (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18537,9 +18552,10 @@ GameObject:
   - component: {fileID: 1431171542}
   - component: {fileID: 1431171543}
   - component: {fileID: 1431171544}
-  m_Layer: 0
+  - component: {fileID: 1431171545}
+  m_Layer: 15
   m_Name: snowman_1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18673,6 +18689,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1431171545
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431171538}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1437207821
 GameObject:
   m_ObjectHideFlags: 0

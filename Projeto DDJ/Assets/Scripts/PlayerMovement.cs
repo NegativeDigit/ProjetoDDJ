@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         jumpInput = Input.GetAxis("Jump");
         horizontalInput = Input.GetAxis("Horizontal");
         var halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
-        groundCheck = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.04f), Vector2.down, 0.025f);
+        groundCheck = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.04f), Vector2.up, 0.025f);
             animator.SetFloat("DireccaoX", horizontalInput);
     }
 
@@ -67,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontalInput < 0f || horizontalInput > 0f)
         {
+            Debug.Log("222222");
             //animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
             playerSprite.flipX = horizontalInput < 0f;
             if (isSwinging)
@@ -111,11 +112,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (!isSwinging)
         {
-            if (!groundCheck) return;
+            //if (!groundCheck) return;
 
             //isJumping = jumpInput > 0f;
             if (isJumping && jumpInput > 0f)
             {
+                
                 rBody.velocity = new Vector2(rBody.velocity.x, jumpSpeed);
                 isJumping = false;
             }
@@ -128,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
         //GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
         if (collision.gameObject.layer == 12)
         {
+            groundCheck = true;
             isJumping = true;
         }
 

@@ -145,6 +145,12 @@ public class PlayerHook : MonoBehaviour
                 var hit = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, ropeLayerMask);
                 if (hit.collider != null)
                 {
+                    Debug.Log(hit.collider.tag);
+                    if (hit.collider.tag.Equals("Enemy")){
+                        Destroy(hit.collider.gameObject);
+                    }
+                    else { 
+
                     playerMovement.enabled = true;
                     ropeAttached = true;
                     if (!ropePositions.Contains(hit.point))
@@ -157,6 +163,7 @@ public class PlayerHook : MonoBehaviour
                         ropeJoint.enabled = true;
                         ropeHingeAnchorSprite.enabled = true;
                     }
+                    }
                 }
                 else
                 {
@@ -167,7 +174,7 @@ public class PlayerHook : MonoBehaviour
             }
             else
             {
-                playerMovement.enabled = false;
+                //playerMovement.enabled = false;
                 ResetRope();
             }
 
