@@ -41,11 +41,10 @@ public class PlayerMovement : MonoBehaviour
     public bool groundCheck;
     private SpriteRenderer playerSprite;
     private Rigidbody2D rBody;
-    private bool isJumping;
+    public bool isJumping = false;
     private Animator animator;
     private float jumpInput;
     private float horizontalInput;
-    private bool isInTheAir;
     void Awake()
     {
         playerSprite = GetComponent<SpriteRenderer>();
@@ -55,41 +54,41 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-            jumpInput = Input.GetAxis("Jump");
-            horizontalInput = Input.GetAxis("Horizontal");
-            var halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
-            groundCheck = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.04f), Vector2.down, 0.025f);
-            if (groundCheck) isInTheAir = true;
+        jumpInput = Input.GetAxis("Jump");
+        horizontalInput = Input.GetAxis("Horizontal");
+        var halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
+        groundCheck = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.04f), Vector2.down, 0.025f);
             animator.SetFloat("DireccaoX", horizontalInput);
     }
 
     void FixedUpdate()
     {
 
-        
+
         if (horizontalInput < 0f || horizontalInput > 0f)
         {
             //animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
             playerSprite.flipX = horizontalInput < 0f;
             if (isSwinging)
             {
+                
                 //animator.SetBool("IsSwinging", true);
 
                 // Get normalized direction vector from player to the hook point
-                var playerToHookDirection = (ropeHook - (Vector2) transform.position).normalized;
+                var playerToHookDirection = (ropeHook - (Vector2)transform.position).normalized;
 
                 // Inverse the direction to get a perpendicular direction
                 Vector2 perpendicularDirection;
                 if (horizontalInput < 0)
                 {
                     perpendicularDirection = new Vector2(-playerToHookDirection.y, playerToHookDirection.x);
-                    var leftPerpPos = (Vector2) transform.position - perpendicularDirection*-2f;
+                    var leftPerpPos = (Vector2)transform.position - perpendicularDirection * -2f;
                     Debug.DrawLine(transform.position, leftPerpPos, Color.green, 0f);
                 }
                 else
                 {
                     perpendicularDirection = new Vector2(playerToHookDirection.y, -playerToHookDirection.x);
-                    var rightPerpPos = (Vector2) transform.position + perpendicularDirection*2f;
+                    var rightPerpPos = (Vector2)transform.position + perpendicularDirection * 2f;
                     Debug.DrawLine(transform.position, rightPerpPos, Color.green, 0f);
                 }
 
@@ -99,9 +98,9 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 //animator.SetBool("IsSwinging", false);
-                    var groundForce = speed*2f;
-                    rBody.AddForce(new Vector2((horizontalInput*groundForce - rBody.velocity.x)*groundForce, 0));
-                    rBody.velocity = new Vector2(rBody.velocity.x, rBody.velocity.y);
+                var groundForce = speed * 2f;
+                rBody.AddForce(new Vector2((horizontalInput * groundForce - rBody.velocity.x) * groundForce, 0));
+                rBody.velocity = new Vector2(rBody.velocity.x, rBody.velocity.y);
             }
         }
         else
@@ -114,10 +113,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!groundCheck) return;
 
-            isJumping = jumpInput > 0f;
-            if (isJumping)
+            //isJumping = jumpInput > 0f;
+            if (isJumping && jumpInput > 0f)
             {
                 rBody.velocity = new Vector2(rBody.velocity.x, jumpSpeed);
+                isJumping = false;
             }
         }
 
@@ -125,9 +125,12 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject.Find("Player") .GetComponent<PlayerMovement>().enabled = true;
+        //GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
+        if (collision.gameObject.layer == 12)
+        {
+            isJumping = true;
+        }
 
     }
 
-    
 }

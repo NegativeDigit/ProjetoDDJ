@@ -103,6 +103,7 @@ public class PlayerHook : MonoBehaviour
         else
         {
             playerMovement.isSwinging = true;
+            playerMovement.isJumping = false;
             playerMovement.ropeHook = ropePositions.Last();
             crosshairSprite.enabled = false;
 
