@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private float jumpInput;
     private float horizontalInput;
-
+    private bool isInTheAir;
     void Awake()
     {
         playerSprite = GetComponent<SpriteRenderer>();
@@ -55,11 +55,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        jumpInput = Input.GetAxis("Jump");
-        horizontalInput = Input.GetAxis("Horizontal");
-        var halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
-        groundCheck = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.04f), Vector2.down, 0.025f);
-        animator.SetFloat("DireccaoX", horizontalInput);
+            jumpInput = Input.GetAxis("Jump");
+            horizontalInput = Input.GetAxis("Horizontal");
+            var halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
+            groundCheck = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.04f), Vector2.down, 0.025f);
+            if (groundCheck) isInTheAir = true;
+            animator.SetFloat("DireccaoX", horizontalInput);
     }
 
     void FixedUpdate()
