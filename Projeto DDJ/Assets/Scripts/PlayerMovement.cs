@@ -129,9 +129,14 @@ public class PlayerMovement : MonoBehaviour
     {
         //GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
         if (collision.gameObject.layer == 12)
+       
         {
             groundCheck = true;
             isJumping = true;
+        }
+
+        if (collision.gameObject.tag == "Enemy") {
+            GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
         }
 
     }

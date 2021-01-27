@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\PlayerHook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerPortal.cs" />
+    <Compile Include="Assets\Scripts\Snowman.cs" />
     <Compile Include="Assets\Scripts\TriggerScript.cs" />
     <Reference Include="UnityEngine">
       <HintPath>E:/Programs/Unity Hub/Testes/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
