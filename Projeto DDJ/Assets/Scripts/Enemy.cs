@@ -6,8 +6,9 @@ public class Enemy : MonoBehaviour
 {
     private GameManager gameManager;
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
+        Debug.Log("Start");
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
     }
@@ -18,7 +19,7 @@ public class Enemy : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name.Equals("Player")) {
