@@ -146,23 +146,25 @@ public class PlayerHook : MonoBehaviour
                 if (hit.collider != null)
                 {
                     Debug.Log(hit.collider.tag);
-                    if (hit.collider.tag.Equals("Enemy")){
+                    if (hit.collider.tag.Equals("Enemy"))
+                    {
                         Destroy(hit.collider.gameObject);
                     }
-                    else { 
-
-                    playerMovement.enabled = true;
-                    ropeAttached = true;
-                    if (!ropePositions.Contains(hit.point))
+                    else
                     {
-                        // Jump slightly to distance the player a little from the ground after grappling to something.
-                        transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
-                        ropePositions.Add(hit.point);
-                        wrapPointsLookup.Add(hit.point, 0);
-                        ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
-                        ropeJoint.enabled = true;
-                        ropeHingeAnchorSprite.enabled = true;
-                    }
+
+                        playerMovement.enabled = true;
+                        ropeAttached = true;
+                        if (!ropePositions.Contains(hit.point))
+                        {
+                            // Jump slightly to distance the player a little from the ground after grappling to something.
+                            transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
+                            ropePositions.Add(hit.point);
+                            wrapPointsLookup.Add(hit.point, 0);
+                            ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
+                            ropeJoint.enabled = true;
+                            ropeHingeAnchorSprite.enabled = true;
+                        }
                     }
                 }
                 else
