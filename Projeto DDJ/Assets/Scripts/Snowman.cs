@@ -29,6 +29,7 @@ public class Snowman : Enemy
     private void spawnSnowBall() {
         GameObject x = Instantiate(snowball);
         x.transform.position = new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z);
+        //x.transform.localScale += new Vector3((float)0.1, (float)0.1, 0);
     }
 
 }

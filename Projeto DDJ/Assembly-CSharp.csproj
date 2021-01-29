@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\PlayerHook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerPortal.cs" />
+    <Compile Include="Assets\Scripts\SlowMoScript.cs" />
     <Compile Include="Assets\Scripts\Snowman.cs" />
     <Compile Include="Assets\Scripts\TriggerScript.cs" />
     <Compile Include="Assets\playerhook.cs" />

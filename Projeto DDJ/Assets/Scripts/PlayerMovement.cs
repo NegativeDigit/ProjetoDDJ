@@ -45,11 +45,17 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private float jumpInput;
     private float horizontalInput;
+    private float originalSpeed;
+
+    public float originalJump;
+
     void Awake()
     {
         playerSprite = GetComponent<SpriteRenderer>();
         rBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        originalSpeed = speed;
+        originalJump = jumpSpeed;
     }
 
     void Update()
@@ -58,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         var halfHeight = transform.GetComponent<SpriteRenderer>().bounds.extents.y;
         groundCheck = Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - halfHeight - 0.04f), Vector2.up, 0.025f);
-            animator.SetFloat("DireccaoX", horizontalInput);
+            //animator.SetFloat("DireccaoX", horizontalInput);
     }
 
     void FixedUpdate()
@@ -67,11 +73,23 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontalInput < 0f || horizontalInput > 0f)
         {
-            Debug.Log("222222");
             //animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
             playerSprite.flipX = horizontalInput < 0f;
             if (isSwinging)
             {
+
+                if (!isJumping)
+                {
+
+                    var groundForce = speed * 2f;
+                    Debug.Log(groundForce);
+                    Vector2 v = new Vector2((horizontalInput * groundForce - rBody.velocity.x) * groundForce, 0);
+                    Debug.Log(v);
+                    rBody.AddForce(v);
+                    rBody.velocity = new Vector2(rBody.velocity.x, rBody.velocity.y);
+                    Debug.Log(rBody.velocity);
+                }
+                else {
                 
                 //animator.SetBool("IsSwinging", true);
 
@@ -95,12 +113,14 @@ public class PlayerMovement : MonoBehaviour
 
                 var force = perpendicularDirection * swingForce;
                 rBody.AddForce(force, ForceMode2D.Force);
+                }
             }
             else
             {
                 //animator.SetBool("IsSwinging", false);
                 var groundForce = speed * 2f;
-                rBody.AddForce(new Vector2((horizontalInput * groundForce - rBody.velocity.x) * groundForce, 0));
+                Vector2 v = new Vector2((horizontalInput * groundForce - rBody.velocity.x) * groundForce, 0);
+                rBody.AddForce(v);
                 rBody.velocity = new Vector2(rBody.velocity.x, rBody.velocity.y);
             }
         }
@@ -133,12 +153,32 @@ public class PlayerMovement : MonoBehaviour
         {
             groundCheck = true;
             isJumping = true;
+            unSlow();
+            
         }
 
         if (collision.gameObject.tag == "Enemy") {
             GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
         }
 
+        //if (collision.gameObject.tag == "Slower")
+           // slowByHalf();
+            
     }
 
+    private void unSlow()
+    {
+        speed = originalSpeed;
+    }
+
+    private void slowByHalf()
+    {
+        speed = originalSpeed / 2;
+
+    }
+
+    void OnParticleCollision(GameObject other)
+    {
+        slowByHalf();
+    }
 }
