@@ -77,6 +77,19 @@ public class PlayerMovement : MonoBehaviour
             playerSprite.flipX = horizontalInput < 0f;
             if (isSwinging)
             {
+
+                if (!isJumping)
+                {
+
+                    var groundForce = speed * 2f;
+                    Debug.Log(groundForce);
+                    Vector2 v = new Vector2((horizontalInput * groundForce - rBody.velocity.x) * groundForce, 0);
+                    Debug.Log(v);
+                    rBody.AddForce(v);
+                    rBody.velocity = new Vector2(rBody.velocity.x, rBody.velocity.y);
+                    Debug.Log(rBody.velocity);
+                }
+                else {
                 
                 //animator.SetBool("IsSwinging", true);
 
@@ -100,12 +113,14 @@ public class PlayerMovement : MonoBehaviour
 
                 var force = perpendicularDirection * swingForce;
                 rBody.AddForce(force, ForceMode2D.Force);
+                }
             }
             else
             {
                 //animator.SetBool("IsSwinging", false);
                 var groundForce = speed * 2f;
-                rBody.AddForce(new Vector2((horizontalInput * groundForce - rBody.velocity.x) * groundForce, 0));
+                Vector2 v = new Vector2((horizontalInput * groundForce - rBody.velocity.x) * groundForce, 0);
+                rBody.AddForce(v);
                 rBody.velocity = new Vector2(rBody.velocity.x, rBody.velocity.y);
             }
         }
