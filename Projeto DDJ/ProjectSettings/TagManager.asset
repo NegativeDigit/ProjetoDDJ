@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Slower
+  - Falling_Obstacle
   layers:
   - Default
   - TransparentFX

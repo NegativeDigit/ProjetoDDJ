@@ -46,8 +46,15 @@ public class PlayerHook : MonoBehaviour
     private Vector2 playerPosition;
     private List<Vector2> ropePositions = new List<Vector2>();
     public float ropeMaxCastDistance = 5f;
+    private GameObject currentHookedObj;
 
     private Rigidbody2D ropeHingeAnchorRb;
+
+    public bool attachedToObj(GameObject obj)
+    {
+        return obj == currentHookedObj;
+    }
+
     private bool distanceSet;
     private bool isColliding;
     private Dictionary<Vector2, int> wrapPointsLookup = new Dictionary<Vector2, int>();
@@ -149,13 +156,15 @@ public class PlayerHook : MonoBehaviour
                     if (hit.collider.tag.Equals("Enemy")){
                         Destroy(hit.collider.gameObject);
                     }
-                    else { 
+                    else {
+                       //ropeHingeAnchor.transform.parent = hit.collider.transform;
 
                     playerMovement.enabled = true;
                     ropeAttached = true;
                     if (!ropePositions.Contains(hit.point))
                     {
-                        // Jump slightly to distance the player a little from the ground after grappling to something.
+                            // Jump slightly to distance the player a little from the ground after grappling to something.
+                            currentHookedObj = hit.collider.gameObject;
                         transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
                         ropePositions.Add(hit.point);
                         wrapPointsLookup.Add(hit.point, 0);
@@ -175,6 +184,7 @@ public class PlayerHook : MonoBehaviour
             else
             {
                 //playerMovement.enabled = false;
+                //ropeHingeAnchor.transform.parent = this.transform;
                 ResetRope();
             }
 

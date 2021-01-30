@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\IceBlocks.cs" />
     <Compile Include="Assets\Scripts\Ice_Spikes.cs" />
     <Compile Include="Assets\Scripts\NextLevel.cs" />
+    <Compile Include="Assets\Scripts\PlataformScript.cs" />
     <Compile Include="Assets\Scripts\PlayerHook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerPortal.cs" />
