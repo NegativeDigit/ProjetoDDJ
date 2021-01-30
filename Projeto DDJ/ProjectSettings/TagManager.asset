@@ -50,6 +50,9 @@ TagManager:
   - name: Player
     uniqueID: 1715341091
     locked: 0
+  - name: Clouds
+    uniqueID: 973465375
+    locked: 0
   - name: Trophy
     uniqueID: 2419296871
     locked: 0

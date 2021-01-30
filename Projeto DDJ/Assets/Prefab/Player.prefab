@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 6057870334901469713}
   - component: {fileID: 955863276}
   - component: {fileID: 955863277}
-  - component: {fileID: 873053706422844461}
+  - component: {fileID: 4138287561616169800}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -335,6 +335,7 @@ MonoBehaviour:
   ropeHook: {x: 0, y: 0}
   isSwinging: 0
   groundCheck: 0
+  isJumping: 0
 --- !u!61 &6057870334901469716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -506,7 +507,7 @@ MonoBehaviour:
   objectToBeCreated: {fileID: 6672743673453700370, guid: 6a8519c099927494fb4d89e1bed9b135,
     type: 3}
   platformTimer: 3
---- !u!114 &873053706422844461
+--- !u!114 &4138287561616169800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -515,16 +516,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6057870334901469706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ecc6f922fae0cb4d8f10f53a7e083ba, type: 3}
+  m_Script: {fileID: 11500000, guid: cfbfb5cb61d48474498699c8d0bf48d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ropeRenderer: {fileID: 6057870334901469713}
+  ropeRenderer: {fileID: 0}
   ropeLayerMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 0
   climbSpeed: 3
-  ropeHingeAnchor: {fileID: 6057870334171323986}
-  ropeJoint: {fileID: 6057870334901469715}
-  crosshair: {fileID: 6057870334511082103}
-  crosshairSprite: {fileID: 6057870334511082088}
-  ropeMaxCastDistance: 15
+  ropeHingeAnchor: {fileID: 0}
+  ropeJoint: {fileID: 0}
+  crosshair: {fileID: 0}
+  crosshairSprite: {fileID: 0}
+  ropeMaxCastDistance: 5

@@ -153,7 +153,8 @@ public class PlayerHook : MonoBehaviour
                 if (hit.collider != null)
                 {
                     Debug.Log(hit.collider.tag);
-                    if (hit.collider.tag.Equals("Enemy")){
+                    if (hit.collider.tag.Equals("Enemy"))
+                    {
                         Destroy(hit.collider.gameObject);
                     }
                     else {
