@@ -153,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
         {
             groundCheck = true;
             isJumping = true;
-            unSlow();
+            //unSlow();
             
         }
 

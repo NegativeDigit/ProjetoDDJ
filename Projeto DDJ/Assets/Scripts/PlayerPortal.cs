@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerPortal : MonoBehaviour
 {
 
-    public Transform crosshair;
-    public SpriteRenderer crosshairSprite;
+    private Transform crosshair;
+    private SpriteRenderer crosshairSprite;
     public GameObject objectToBeCreated;
     private float distance;
     private GameObject obj;
@@ -16,6 +16,8 @@ public class PlayerPortal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        crosshair = transform.GetChild(1);
+        crosshairSprite = crosshair.GetComponent<SpriteRenderer>();
         playerMovement = gameObject.GetComponent<PlayerMovement>();
         playerHook = gameObject.GetComponent<PlayerHook>();
         distance = playerHook.ropeMaxCastDistance;

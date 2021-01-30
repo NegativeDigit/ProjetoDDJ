@@ -34,13 +34,13 @@ using UnityEngine;
 
 public class PlayerHook : MonoBehaviour
 {
-    public LineRenderer ropeRenderer;
+    private LineRenderer ropeRenderer;
     public LayerMask ropeLayerMask;
     public float climbSpeed = 3f;
-    public GameObject ropeHingeAnchor;
-    public DistanceJoint2D ropeJoint;
-    public Transform crosshair;
-    public SpriteRenderer crosshairSprite;
+    private GameObject ropeHingeAnchor;
+    private DistanceJoint2D ropeJoint;
+    private Transform crosshair;
+    private SpriteRenderer crosshairSprite;
     private PlayerMovement playerMovement;
     private bool ropeAttached;
     private Vector2 playerPosition;
@@ -63,6 +63,11 @@ public class PlayerHook : MonoBehaviour
 
     void Awake()
     {
+        ropeRenderer = transform.GetComponent<LineRenderer>();
+        ropeHingeAnchor = transform.GetChild(0).gameObject;
+        crosshair = transform.GetChild(1);
+        crosshairSprite = crosshair.GetComponent<SpriteRenderer>();
+        ropeJoint = transform.GetComponent<DistanceJoint2D>();
         ropeJoint.enabled = false;
         playerPosition = transform.position;
         ropeHingeAnchorRb = ropeHingeAnchor.GetComponent<Rigidbody2D>();
