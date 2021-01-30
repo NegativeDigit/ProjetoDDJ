@@ -4,14 +4,48 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform player;
-    public Vector3 boundsMax;
-    public Vector3 boundsMin;
+    [SerializeField]
+    public GameObject player;
+
+    [SerializeField]
+    Vector2 posOffset;
+
+    [SerializeField]
+    float timeOffset;
+
+    [SerializeField]
+    float leftLimit;
+
+    [SerializeField]
+    float rightLimit;
+
+    [SerializeField]
+    float topLimit;
+
+    [SerializeField]
+    float bottomLimit;
+
+    //public Vector3 boundsMax;
+    //public Vector3 boundsMin;
     void Update () 
     {
 
-        transform.position = new Vector3(player.position.x, player.position.y+1.5f, transform.position.z);  
-         //transform.position = new Vector3 (Mathf.Clamp (transform.position.x, boundsMin.x, boundsMax.x), Mathf.Clamp (transform.position.y, boundsMin.y, boundsMax.y), Mathf.Clamp (transform.position.z, boundsMin.z, boundsMax.z));
+        Vector3 startPos = transform.position;
+        Vector3 endPos = player.transform.position;
+
+        endPos.x += posOffset.x;
+        endPos.y += posOffset.y;
+        endPos.z = -10;
+
+        transform.position = Vector3.Lerp(startPos, endPos, timeOffset*Time.deltaTime);
+        transform.position = new Vector3
+            (
+            Mathf.Clamp(transform.position.x, leftLimit, rightLimit),
+            Mathf.Clamp(transform.position.y, bottomLimit, topLimit),
+            transform.position.z
+            );
+        
+        //transform.position = new Vector3 (Mathf.Clamp (transform.position.x, boundsMin.x, boundsMax.x), Mathf.Clamp (transform.position.y, boundsMin.y, boundsMax.y), Mathf.Clamp (transform.position.z, boundsMin.z, boundsMax.z));
     }
     // Start is called before the first frame update
     void Start()
