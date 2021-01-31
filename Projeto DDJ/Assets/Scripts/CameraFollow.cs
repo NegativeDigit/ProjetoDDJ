@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField]
-    public GameObject player;
+    private GameObject player;
 
     [SerializeField]
     Vector2 posOffset;
@@ -47,10 +48,16 @@ public class CameraFollow : MonoBehaviour
         
         //transform.position = new Vector3 (Mathf.Clamp (transform.position.x, boundsMin.x, boundsMax.x), Mathf.Clamp (transform.position.y, boundsMin.y, boundsMax.y), Mathf.Clamp (transform.position.z, boundsMin.z, boundsMax.z));
     }
+
+    public float getBottomValue()
+    {
+        return bottomLimit;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        //transform.position.
+        player = GameObject.Find("Player");
     }
 
 
