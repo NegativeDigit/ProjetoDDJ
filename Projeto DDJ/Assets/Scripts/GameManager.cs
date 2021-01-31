@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(bottomLimit + height / 2);
+        //Debug.Log(bottomLimit + height / 2);
         if (player.transform.position.y + height / 2 < bottomLimit)
         {
             DeathFallFunction();
