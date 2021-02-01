@@ -157,7 +157,12 @@ public class PlayerHook : MonoBehaviour
                 var hit = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, ropeLayerMask);
                 if (hit.collider != null)
                 {
-                    Debug.Log(hit.collider.tag);
+                    if (hit.collider.tag.Equals("Falling_Obstacle"))
+                    {
+                        Debug.Log(hit.collider.transform.GetComponent<Rigidbody2D>().isKinematic);
+                        hit.collider.GetComponent<Rigidbody2D>().isKinematic = false;
+                        return;
+                    }else
                     if (hit.collider.tag.Equals("Enemy"))
                     {
                         Destroy(hit.collider.gameObject);

@@ -41,7 +41,6 @@ public class Snowman : Enemy
         GameObject x = Instantiate(snowball);
         x.transform.position = new Vector3(this.transform.position.x -1, this.transform.position.y + (float) 0.2, this.transform.position.z);
         x.GetComponent<Rigidbody2D>().AddForce(new Vector2(-1,0) *thrust);
-
     }
 
 }
