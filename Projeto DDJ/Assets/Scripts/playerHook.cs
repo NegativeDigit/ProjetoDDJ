@@ -148,10 +148,20 @@ public class PlayerHook : MonoBehaviour
                     Debug.Log(hit.collider.tag);
                     if (hit.collider.tag.Equals("Enemy"))
                     {
-                        Destroy(hit.collider.gameObject);
+                      Destroy(hit.collider.gameObject);
                     }
                     else
                     {
+
+                        if (hit.collider.tag.Equals("Bird"))
+                        {
+                            hit.collider.gameObject.GetComponent<Bird_Script>().enabled = false;
+                            climbSpeed = 500f;
+                            Vector2.MoveTowards(playerPosition, hit.collider.gameObject.transform.position, 30);
+                        } else
+                        {
+                            climbSpeed = 5f;
+                        }
 
                         playerMovement.enabled = true;
                         ropeAttached = true;
