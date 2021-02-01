@@ -8,7 +8,6 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     protected virtual void Start()
     {
-        Debug.Log("Start");
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 
     }

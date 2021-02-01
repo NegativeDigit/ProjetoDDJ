@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\PlayerPortal.cs" />
     <Compile Include="Assets\Scripts\Snowman.cs" />
     <Compile Include="Assets\Scripts\TriggerScript.cs" />
+    <Compile Include="Assets\Scripts\Yeti.cs" />
     <Compile Include="Assets\SnowBall.cs" />
     <Compile Include="Assets\playerhook.cs" />
     <None Include="Assets\Pixel Bird\Read Me.txt" />
