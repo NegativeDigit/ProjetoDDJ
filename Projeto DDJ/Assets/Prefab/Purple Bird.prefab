@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5780490652530174521}
   - component: {fileID: 5780490652530174500}
   - component: {fileID: 5780490652530174501}
-  m_Layer: 12
+  m_Layer: 15
   m_Name: Purple Bird
   m_TagString: Bird
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bird: {fileID: 5780490652530174501}
   player: {fileID: 0}
-  speed: 10
+  speed: 15
   acceptedDist: 30
 --- !u!68 &5780490652530174500
 EdgeCollider2D:

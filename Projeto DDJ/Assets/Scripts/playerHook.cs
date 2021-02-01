@@ -157,6 +157,13 @@ public class PlayerHook : MonoBehaviour
                 var hit = Physics2D.Raycast(playerPosition, aimDirection, ropeMaxCastDistance, ropeLayerMask);
                 if (hit.collider != null)
                 {
+
+                    if(hit.collider.tag.Equals("Bird"))
+                    {
+                        hit.collider.gameObject.GetComponent<Bird_Script>().enabled = false;
+
+                    }
+
                     if (hit.collider.tag.Equals("Falling_Obstacle"))
                     {
                         Debug.Log(hit.collider.transform.GetComponent<Rigidbody2D>().isKinematic);

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7328659319157600489}
   - component: {fileID: 7175168694597877922}
   - component: {fileID: 4427053690206706527}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Standing_Cloud_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
