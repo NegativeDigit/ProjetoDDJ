@@ -14,34 +14,42 @@ public class Yeti : Enemy
     public float downTimer = 2.5f;
     public float topTimer = 3.5f;
     [SerializeField] private int thrust;
+    private bool entered = false;
 
 // Update is called once per frame
 void Update()
 {
-    currentTimeUp += Time.deltaTime;
-    currentTimeDown += Time.deltaTime;
-    currentTimeMiddle += Time.deltaTime;
-    currentTimeTop += Time.deltaTime;
-    if (upTimer - currentTimeUp < 0.001) {
-            
-            throwSpike(1);
-            currentTimeUp = 0;
-    }
-    if (middleTimer - currentTimeMiddle < 0.001) {
-            throwSpike(0);
-            currentTimeMiddle = 0;
-    }
-
-    if (downTimer - currentTimeDown < 0.001) {
-            throwSpike(-1);
-            currentTimeDown = 0;
-    }
-
-        if (topTimer - currentTimeTop < 0.001)
+        if (entered)
         {
-            throwSpike(3);
-            currentTimeTop = 0;
+            currentTimeUp += Time.deltaTime;
+            currentTimeDown += Time.deltaTime;
+            currentTimeMiddle += Time.deltaTime;
+            currentTimeTop += Time.deltaTime;
+            if (upTimer - currentTimeUp < 0.001)
+            {
+
+                throwSpike(1);
+                currentTimeUp = 0;
+            }
+            if (middleTimer - currentTimeMiddle < 0.001)
+            {
+                throwSpike(0);
+                currentTimeMiddle = 0;
+            }
+
+            if (downTimer - currentTimeDown < 0.001)
+            {
+                throwSpike(-1);
+                currentTimeDown = 0;
+            }
+
+            if (topTimer - currentTimeTop < 0.001)
+            {
+                throwSpike(3);
+                currentTimeTop = 0;
+            }
         }
+
     }
 
     void throwSpike(int height) {
@@ -54,8 +62,13 @@ void Update()
         x.AddComponent<Ice_Spikes>();
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        entered = true;
+    }
 
-   protected override void OnCollisionEnter2D(Collision2D collision)
+
+    protected override void OnCollisionEnter2D(Collision2D collision)
     {
         base.OnCollisionEnter2D(collision);
         if (collision.gameObject.tag.Equals("Falling_Obstacle")) {

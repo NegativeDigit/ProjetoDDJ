@@ -30,7 +30,10 @@ public class CameraFollow : MonoBehaviour
     public Vector3 boundsMin;
     void Update () 
     {
-
+        if (player.transform.position.y > 5.133107) { 
+            leftLimit = (float)-23.24006;
+            bottomLimit = (float)-1.796795;
+        }
         Vector3 startPos = transform.position;
         Vector3 endPos = player.transform.position;
 

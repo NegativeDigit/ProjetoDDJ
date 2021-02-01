@@ -341,7 +341,8 @@ public class PlayerHook : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D colliderStay)
     {
-        isColliding = true;
+        if(!colliderStay.gameObject.tag.Equals("Undestroyable_by_hook"))
+            isColliding = true;
 
     }
 
