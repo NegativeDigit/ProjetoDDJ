@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LightningBolt\LightningBoltScript.cs" />
     <Compile Include="Assets\Scripts\Bird_Script.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\IceBlocks.cs" />
     <Compile Include="Assets\Scripts\Ice_Spikes.cs" />
+    <Compile Include="Assets\Scripts\Lightning.cs" />
     <Compile Include="Assets\Scripts\NextLevel.cs" />
     <Compile Include="Assets\Scripts\PlataformScript.cs" />
     <Compile Include="Assets\Scripts\PlayerHook.cs" />
@@ -85,7 +87,10 @@
     <Compile Include="Assets\Scripts\TriggerScript.cs" />
     <Compile Include="Assets\Scripts\Yeti.cs" />
     <Compile Include="Assets\SnowBall.cs" />
+    <Compile Include="Assets\lighting.cs" />
     <Compile Include="Assets\playerhook.cs" />
+    <Compile Include="Assets\script.cs" />
+    <None Include="Assets\LightningBolt\Readme.txt" />
     <None Include="Assets\Pixel Bird\Read Me.txt" />
     <None Include="Assets\Customizable Skybox\Stylized Sky\Shaders\Stylized Sky.shader" />
     <Reference Include="UnityEngine">
