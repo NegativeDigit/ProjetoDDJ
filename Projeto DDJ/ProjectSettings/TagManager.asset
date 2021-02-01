@@ -6,7 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Slower
-  - Bird
+  - Falling_Obstacle
+  - Spike
   layers:
   - Default
   - TransparentFX

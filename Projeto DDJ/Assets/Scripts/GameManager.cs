@@ -6,15 +6,24 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    public GameObject levelCompleteUI;
-    public GameObject levelFailedUI;
-    public GameObject player;
-    public GameObject lower;
+    private GameObject levelCompleteUI;
+    private GameObject levelFailedUI;
+    private GameObject player;
+    private GameObject plaýer;
+    private float bottomLimit;
+    private Camera camera;
+    private float width, height;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        levelFailedUI = GameObject.Find("Canvas").transform.GetChild(1).gameObject;
+        levelCompleteUI = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
+        player = GameObject.Find("Player");
+        camera = Camera.main;
+        bottomLimit = camera.GetComponent<CameraFollow>().getBottomValue();
+        height = 2f * camera.orthographicSize;
+        width = height * camera.aspect;
     }
 
     public void CompleteLevel(){
@@ -24,15 +33,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DeathFallFunction();
+        //Debug.Log(bottomLimit + height / 2);
+        if (player.transform.position.y + height / 2 < bottomLimit)
+        {
+            DeathFallFunction();
+        }
+
+
+       
     }
 
     void DeathFallFunction()
     {
-        if(lower != null && player.transform.position.y <= lower.transform.position.y - 10)
-        {
-            FailedLevel();
-        }
+        FailedLevel();
     }
 
     public void FailedLevel(){

@@ -34,20 +34,27 @@ using UnityEngine;
 
 public class PlayerHook : MonoBehaviour
 {
-    public LineRenderer ropeRenderer;
+    private LineRenderer ropeRenderer;
     public LayerMask ropeLayerMask;
     public float climbSpeed = 3f;
-    public GameObject ropeHingeAnchor;
-    public DistanceJoint2D ropeJoint;
-    public Transform crosshair;
-    public SpriteRenderer crosshairSprite;
+    private GameObject ropeHingeAnchor;
+    private DistanceJoint2D ropeJoint;
+    private Transform crosshair;
+    private SpriteRenderer crosshairSprite;
     private PlayerMovement playerMovement;
     private bool ropeAttached;
     private Vector2 playerPosition;
     private List<Vector2> ropePositions = new List<Vector2>();
     public float ropeMaxCastDistance = 5f;
+    private GameObject currentHookedObj;
 
     private Rigidbody2D ropeHingeAnchorRb;
+
+    public bool attachedToObj(GameObject obj)
+    {
+        return obj == currentHookedObj;
+    }
+
     private bool distanceSet;
     private bool isColliding;
     private Dictionary<Vector2, int> wrapPointsLookup = new Dictionary<Vector2, int>();
@@ -56,6 +63,11 @@ public class PlayerHook : MonoBehaviour
 
     void Awake()
     {
+        ropeRenderer = transform.GetComponent<LineRenderer>();
+        ropeHingeAnchor = transform.GetChild(0).gameObject;
+        crosshair = transform.GetChild(1);
+        crosshairSprite = crosshair.GetComponent<SpriteRenderer>();
+        ropeJoint = transform.GetComponent<DistanceJoint2D>();
         ropeJoint.enabled = false;
         playerPosition = transform.position;
         ropeHingeAnchorRb = ropeHingeAnchor.GetComponent<Rigidbody2D>();
@@ -148,33 +160,24 @@ public class PlayerHook : MonoBehaviour
                     Debug.Log(hit.collider.tag);
                     if (hit.collider.tag.Equals("Enemy"))
                     {
-                      Destroy(hit.collider.gameObject);
+                        Destroy(hit.collider.gameObject);
                     }
-                    else
+                    else {
+                       //ropeHingeAnchor.transform.parent = hit.collider.transform;
+
+                    playerMovement.enabled = true;
+                    ropeAttached = true;
+                    if (!ropePositions.Contains(hit.point))
                     {
-
-                        if (hit.collider.tag.Equals("Bird"))
-                        {
-                            hit.collider.gameObject.GetComponent<Bird_Script>().enabled = false;
-                            climbSpeed = 500f;
-                            Vector2.MoveTowards(playerPosition, hit.collider.gameObject.transform.position, 30);
-                        } else
-                        {
-                            climbSpeed = 5f;
-                        }
-
-                        playerMovement.enabled = true;
-                        ropeAttached = true;
-                        if (!ropePositions.Contains(hit.point))
-                        {
                             // Jump slightly to distance the player a little from the ground after grappling to something.
-                            transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
-                            ropePositions.Add(hit.point);
-                            wrapPointsLookup.Add(hit.point, 0);
-                            ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
-                            ropeJoint.enabled = true;
-                            ropeHingeAnchorSprite.enabled = true;
-                        }
+                            currentHookedObj = hit.collider.gameObject;
+                        transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
+                        ropePositions.Add(hit.point);
+                        wrapPointsLookup.Add(hit.point, 0);
+                        ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
+                        ropeJoint.enabled = true;
+                        ropeHingeAnchorSprite.enabled = true;
+                    }
                     }
                 }
                 else
@@ -187,6 +190,7 @@ public class PlayerHook : MonoBehaviour
             else
             {
                 //playerMovement.enabled = false;
+                //ropeHingeAnchor.transform.parent = this.transform;
                 ResetRope();
             }
 

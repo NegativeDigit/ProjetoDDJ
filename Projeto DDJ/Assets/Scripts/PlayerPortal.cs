@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerPortal : MonoBehaviour
 {
 
-    public Transform crosshair;
-    public SpriteRenderer crosshairSprite;
+    private Transform crosshair;
+    private SpriteRenderer crosshairSprite;
     public GameObject objectToBeCreated;
     private float distance;
     private GameObject obj;
@@ -16,6 +16,8 @@ public class PlayerPortal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        crosshair = transform.GetChild(1);
+        crosshairSprite = crosshair.GetComponent<SpriteRenderer>();
         playerMovement = gameObject.GetComponent<PlayerMovement>();
         playerHook = gameObject.GetComponent<PlayerHook>();
         distance = playerHook.ropeMaxCastDistance;
@@ -58,18 +60,27 @@ public class PlayerPortal : MonoBehaviour
         obj.layer = 12;
         obj.GetComponent<SpriteRenderer>().sortingOrder = 1;
         obj.transform.localScale = new Vector3(transform.localScale.x/2,transform.localScale.y/3, 0);
-       
+        obj.AddComponent<PlataformScript>();
+        obj.GetComponent<PlataformScript>().setObject(obj);
+
     }
 
     IEnumerator ExecuteAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
 
-        if(playerHook.isRopeAttached())
+        if (playerHook.isRopeAttached() && playerHook.attachedToObj(obj))
         {
             playerHook.ResetRope();
         }
 
+        DestroyObjectPlataform(obj);
+    }
+
+    private void DestroyObjectPlataform(GameObject obj)
+    {
+        //if(obj.transform.childCount != 3)
+        //obj.transform.GetChild(3).transform.parent = this.transform;
         Destroy(obj);
     }
 
