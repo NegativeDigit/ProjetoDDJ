@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     private GameObject levelFailedUI;
     private GameObject player;
     private GameObject plaýer;
-    private float bottomLimit;
+  //  private float bottomLimit;
     private Camera camera;
     private float width, height;
 
@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         levelCompleteUI = GameObject.Find("Canvas").transform.GetChild(0).gameObject;
         player = GameObject.Find("Player");
         camera = Camera.main;
-        bottomLimit = camera.GetComponent<CameraFollow>().getBottomValue();
+      //  bottomLimit = camera.GetComponent<CameraFollow>().getBottomValue();
         height = 2f * camera.orthographicSize;
         width = height * camera.aspect;
     }
@@ -34,10 +34,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //Debug.Log(bottomLimit + height / 2);
-        if (player.transform.position.y + height / 2 < bottomLimit)
+       /* if (player.transform.position.y + height / 2 < bottomLimit)
         {
             DeathFallFunction();
-        }
+        }*/
 
 
        
