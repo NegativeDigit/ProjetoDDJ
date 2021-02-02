@@ -39,6 +39,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 ropeHook;
     public bool isSwinging;
     public bool groundCheck;
+    private GameManager gameManager;
     private SpriteRenderer playerSprite;
     private Rigidbody2D rBody;
     public bool isJumping = false;
@@ -51,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         playerSprite = GetComponent<SpriteRenderer>();
         rBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -158,12 +160,17 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "Enemy") {
-            GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
+            gameManager.FailedLevel();
+        }
+
+        if (collision.gameObject.layer == 13)// fim
+        {
+            gameManager.CompleteLevel();
         }
 
         //if (collision.gameObject.tag == "Slower")
-           // slowByHalf();
-            
+        // slowByHalf();
+
     }
 
     private void unSlow()
