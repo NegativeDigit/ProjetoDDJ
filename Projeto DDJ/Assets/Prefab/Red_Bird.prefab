@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4612175364355385452}
   - component: {fileID: 4612175364355385455}
   - component: {fileID: 6735814819615645169}
-  m_Layer: 15
+  m_Layer: 12
   m_Name: Red_Bird
   m_TagString: Bird
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bird: {fileID: 4612175364355385452}
-  player: {fileID: 7601154576491904393, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
+  player: {fileID: 6057870334901469718, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
   speed: 10
   acceptedDist: 30
 --- !u!68 &6735814819615645169

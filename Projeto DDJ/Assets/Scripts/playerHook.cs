@@ -161,9 +161,9 @@ public class PlayerHook : MonoBehaviour
                     if(hit.collider.tag.Equals("Bird"))
                     {
                         hit.collider.gameObject.GetComponent<Bird_Script>().enabled = false;
-                        hit.collider.gameObject.GetComponent<Blue_Bird_Script>().enabled = false;
-
-
+                        if(hit.collider.gameObject.name == "Blue_Bird")
+                            hit.collider.gameObject.GetComponent<Blue_Bird_Script>().enabled = false;
+                        hit.collider.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
                     }
 
                     if (hit.collider.tag.Equals("Falling_Obstacle"))

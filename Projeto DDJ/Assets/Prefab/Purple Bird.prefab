@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5780490652530174521}
   - component: {fileID: 5780490652530174500}
   - component: {fileID: 5780490652530174501}
-  m_Layer: 15
+  m_Layer: 12
   m_Name: Purple Bird
   m_TagString: Bird
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bird: {fileID: 5780490652530174501}
-  player: {fileID: 0}
+  player: {fileID: 6057870334901469718, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
   speed: 15
   acceptedDist: 30
 --- !u!68 &5780490652530174500

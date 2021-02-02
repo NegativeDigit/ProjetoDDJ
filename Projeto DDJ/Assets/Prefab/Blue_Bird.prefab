@@ -178,6 +178,6 @@ MonoBehaviour:
   blueBird: {fileID: 3176825433826672060}
   smallBlueBird: {fileID: 7823366766572088019, guid: 88fc25beb972eae42a732d457869b6fb,
     type: 3}
-  player: {fileID: 0}
+  player: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
   timer: 100
   acceptedDist: 50
