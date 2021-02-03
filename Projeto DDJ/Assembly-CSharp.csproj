@@ -82,7 +82,6 @@
     <Compile Include="Assets\Scripts\Lightning.cs" />
     <Compile Include="Assets\Scripts\NextLevel.cs" />
     <Compile Include="Assets\Scripts\PlataformScript.cs" />
-    <Compile Include="Assets\Scripts\PlayerHook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerPortal.cs" />
     <Compile Include="Assets\Scripts\Small_Blue_Bird_Script.cs" />
@@ -90,6 +89,7 @@
     <Compile Include="Assets\Scripts\Snowman.cs" />
     <Compile Include="Assets\Scripts\TriggerScript.cs" />
     <Compile Include="Assets\Scripts\Yeti.cs" />
+    <Compile Include="Assets\Scripts\playerHook.cs" />
     <Compile Include="Assets\SliderScript.cs" />
     <Compile Include="Assets\SnowBall.cs" />
     <Compile Include="Assets\lighting.cs" />
