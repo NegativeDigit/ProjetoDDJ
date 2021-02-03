@@ -84,12 +84,12 @@ public class PlayerMovement : MonoBehaviour
                 {
 
                     var groundForce = speed * 2f;
-                   // Debug.Log(groundForce);
+                    Debug.Log(groundForce);
                     Vector2 v = new Vector2((horizontalInput * groundForce - rBody.velocity.x) * groundForce, 0);
-                   // Debug.Log(v);
+                    Debug.Log(v);
                     rBody.AddForce(v);
                     rBody.velocity = new Vector2(rBody.velocity.x, rBody.velocity.y);
-                //    Debug.Log(rBody.velocity);
+                    Debug.Log(rBody.velocity);
                 }
                 else {
                 

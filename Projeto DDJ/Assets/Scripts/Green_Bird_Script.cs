@@ -10,32 +10,48 @@ public class Green_Bird_Script : MonoBehaviour
     private GameObject obj;
     public GameObject player;
     public CapsuleCollider2D boss_Cloud;
-    private bool bossStart;
+    public Transform exitDoor;
+    private Vector2 target;
+    public bool bossStart;
+    private bool bossFinish;
     private bool direction;
     public int directionMaxCount = 500;
     private int directionCount;
     public float speed = 2;
     public int spawnMaxCount = 250;
     private int spawnCount;
+    public int hp;
+    public int maxHP = 10;
 
     // Start is called before the first frame update
     void Start()
     {
         bossStart = false;
+        bossFinish = false;
         direction = true;
         directionCount = 0;
         spawnCount = 0;
+        hp = maxHP;
+        target = new Vector2(exitDoor.position.x, exitDoor.position.y - 7);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
+        if(hp == 0)
+        {
+            bossFinish = true;
+            greenBird.GetComponent<Rigidbody2D>().gravityScale = 1;
+            exitDoor.position = Vector2.MoveTowards(exitDoor.position, target, 1);
+        }
+
         if (Physics2D.IsTouching(player.GetComponent<BoxCollider2D>(), boss_Cloud))
         {
             bossStart = true;
         }
 
-        if(bossStart)
+        if(bossStart && !bossFinish)
         {
             if(greenBird.transform.position.y > 8)
             {
@@ -110,4 +126,5 @@ public class Green_Bird_Script : MonoBehaviour
         obj.GetComponent<Small_Green_Bird_Script>().smallGreenBird = obj;
         obj.GetComponent<Small_Green_Bird_Script>().greenBird = greenBird;
     }
+
 }

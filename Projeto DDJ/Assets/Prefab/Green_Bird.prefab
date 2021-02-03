@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -263181675125720052}
   m_Layer: 12
   m_Name: Green_Bird
-  m_TagString: Bird
+  m_TagString: Boss_Bird
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
