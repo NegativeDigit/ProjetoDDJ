@@ -33,8 +33,7 @@ public class Cloud_Script : MonoBehaviour
                 cloud.transform.Translate(Vector3.left * speed * Time.deltaTime);
             }
             count++;
-        }
-        else if (direction == false && count <= maxCount)
+        } else if(direction == false && count <= maxCount)
         {
             if (vertical)
             {
@@ -45,24 +44,16 @@ public class Cloud_Script : MonoBehaviour
                 cloud.transform.Translate(Vector3.right * speed * Time.deltaTime);
             }
             count++;
-        }
-        else
+        } else
         {
             count = 0;
-            if (direction == true)
+            if(direction == true)
             {
                 direction = false;
-            }
-            else
+            } else
             {
                 direction = true;
             }
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag.Equals("Player"))
-            GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
     }
 }

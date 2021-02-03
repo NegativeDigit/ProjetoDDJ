@@ -8,11 +8,10 @@ public class Small_Green_Bird_Script : MonoBehaviour
     public Transform player;
     public GameObject smallGreenBird;
     public GameObject greenBird;
-    public float speed = 7f;
+    public float speed = 5f;
     public int maxDistance = 50;
     public int lifeTime = 500;
     public int count;
-    public bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -30,11 +29,4 @@ public class Small_Green_Bird_Script : MonoBehaviour
         }
         count++;
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag.Equals("Player") && isAlive)
-            GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
-    }
-
 }
