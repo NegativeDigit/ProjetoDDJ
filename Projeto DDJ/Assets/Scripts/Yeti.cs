@@ -60,6 +60,7 @@ void Update()
         
         x.GetComponent<Rigidbody2D>().AddForce(new Vector2(1,0) * thrust);
         x.AddComponent<Ice_Spikes>();
+        x.transform.SetParent(this.gameObject.transform);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
