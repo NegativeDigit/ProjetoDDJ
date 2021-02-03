@@ -10,16 +10,13 @@ public class Elevator : MonoBehaviour
     public Transform downpos;
     public Transform upperPos;
 
-    public GameObject upArrow;
-    public GameObject downArrow;
-
     public float speed;
     bool isElevatorDown;
 
     void Start()
     {
         player = GameObject.Find("Player").transform;
-        upArrow.SetActive(false);
+      
     }
 
     // Update is called once per frame
@@ -36,8 +33,7 @@ public class Elevator : MonoBehaviour
             if (transform.position.y <= downpos.position.y)
             {
                 isElevatorDown = true;
-                downArrow.SetActive(false);
-                upArrow.SetActive(true);
+                
             }
             else if (transform.position.y >= upperPos.position.y) {
                 isElevatorDown = false;
@@ -55,8 +51,6 @@ public class Elevator : MonoBehaviour
             else {
                 Debug.Log("Reached destination");
                 isElevatorDown = false;
-                downArrow.SetActive(true);
-                upArrow.SetActive(false);
             }
         }
         else {
