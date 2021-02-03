@@ -35,7 +35,8 @@ public class PlayerPortal : MonoBehaviour
             aimAngle = Mathf.PI * 2 + aimAngle;
         }
         SetCrosshairPosition(aimAngle);
-         if (Input.GetKeyDown(KeyCode.Mouse1))
+        //var hit = Physics2D.Raycast(this.transform.position, facingDirection, distance, Laye);
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
              CreateObject();
              //crosshairSprite.enabled = false;

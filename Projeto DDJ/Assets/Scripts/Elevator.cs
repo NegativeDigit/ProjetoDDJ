@@ -49,6 +49,7 @@ public class Elevator : MonoBehaviour
         {
             if (transform.position.y < upperPos.position.y )
             {
+                Debug.Log("dasas");
                 transform.position = Vector2.MoveTowards(transform.position, upperPos.position, speed * Time.deltaTime);
 
             }
