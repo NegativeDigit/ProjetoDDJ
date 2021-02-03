@@ -17104,12 +17104,12 @@ PrefabInstance:
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.41
+      value: -6.87
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.06
+      value: -2.49
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
@@ -21271,7 +21271,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1448089607}
-  m_RootOrder: 282
+  m_RootOrder: 405
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!331 &421570272
 SpriteMask:
@@ -21351,7 +21351,7 @@ Transform:
   m_LocalScale: {x: 0.9758339, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1448089607}
-  m_RootOrder: 283
+  m_RootOrder: 282
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &422494645
 SpriteRenderer:
@@ -22452,7 +22452,7 @@ Transform:
   m_Children:
   - {fileID: 1617644387}
   m_Father: {fileID: 2048419591}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &441611262
 SpriteRenderer:
@@ -54978,7 +54978,7 @@ Transform:
   m_LocalScale: {x: 1.21, y: 2.011625, z: 1.21}
   m_Children: []
   m_Father: {fileID: 1591492094}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1027878311
 MonoBehaviour:
@@ -58751,7 +58751,7 @@ Transform:
   m_LocalScale: {x: 2.2858934, y: 1.6612548, z: 1}
   m_Children: []
   m_Father: {fileID: 1591492094}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1076944306
 SpriteRenderer:
@@ -79600,6 +79600,7 @@ Transform:
   - {fileID: 2020788008}
   - {fileID: 789468560}
   - {fileID: 1909538955}
+  - {fileID: 421570271}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -82643,7 +82644,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1512362359}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8070ce9bedefd8c479224fe004a73f1e, type: 3}
   m_Name: 

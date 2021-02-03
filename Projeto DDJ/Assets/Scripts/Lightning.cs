@@ -354,5 +354,11 @@ namespace DigitalRuby.LightningBolt
                 }
             }
         }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.tag.Equals("Player"))
+                GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
+        }
     }
 }

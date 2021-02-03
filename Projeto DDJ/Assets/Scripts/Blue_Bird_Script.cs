@@ -11,6 +11,7 @@ public class Blue_Bird_Script : MonoBehaviour
     public int timer = 4000;
     private int count;
     public float acceptedDist = 30;
+    public bool isAlive = true;
 
     // Start is called before the first frame update
     void Start()
@@ -58,4 +59,10 @@ public class Blue_Bird_Script : MonoBehaviour
         obj.GetComponent<Small_Blue_Bird_Script>().blueBird = blueBird;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Player") && isAlive)
+            GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
+
+    }
 }
