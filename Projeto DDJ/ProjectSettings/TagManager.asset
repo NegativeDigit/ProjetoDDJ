@@ -8,6 +8,7 @@ TagManager:
   - Slower
   - Falling_Obstacle
   - Spike
+  - Wall
   layers:
   - Default
   - TransparentFX
