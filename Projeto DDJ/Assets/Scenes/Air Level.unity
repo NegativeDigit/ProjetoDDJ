@@ -664,17 +664,17 @@ PrefabInstance:
     - target: {fileID: 4612175364355385427, guid: f1e18568df22cd840be383179e5f74e2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4612175364355385427, guid: f1e18568df22cd840be383179e5f74e2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 391.9
+      value: 355.62
       objectReference: {fileID: 0}
     - target: {fileID: 4612175364355385427, guid: f1e18568df22cd840be383179e5f74e2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.4
+      value: -9.38
       objectReference: {fileID: 0}
     - target: {fileID: 4612175364355385427, guid: f1e18568df22cd840be383179e5f74e2,
         type: 3}
@@ -1571,11 +1571,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0.6509434, g: 0.3224012, b: 0.3224012, a: 1}
+    m_PressedColor: {r: 1, g: 0.4198113, b: 0.4198113, a: 1}
+    m_SelectedColor: {r: 1, g: 0, b: 0, a: 1}
+    m_DisabledColor: {r: 0.735849, g: 0.57965463, b: 0.57965463, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1597,7 +1597,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.636
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1911,7 +1911,7 @@ Transform:
   m_Children:
   - {fileID: 1303174763}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &894183521
 MonoBehaviour:
@@ -2498,7 +2498,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 48
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1171994945
 PrefabInstance:
@@ -2589,12 +2589,12 @@ PrefabInstance:
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 361
+      value: -13.92
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.3
+      value: -5.52
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
@@ -2663,8 +2663,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303174762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.14, y: 10.31, z: 50}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalPosition: {x: -4.5, y: 10.31, z: 75}
+  m_LocalScale: {x: 100.00001, y: 100.00001, z: 1}
   m_Children: []
   m_Father: {fileID: 894183520}
   m_RootOrder: 0
@@ -2714,8 +2714,8 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 9.6, y: 4.8}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
+  m_AdaptiveModeThreshold: 0.444
+  m_SpriteTileMode: 1
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
@@ -3623,6 +3623,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13228c73e8098914fb091eb340cb0753, type: 3}
+--- !u!1001 &2035856194
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 392.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174502, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5780490652530174522, guid: 55cb541fd7ff3b34093f4506d6471cc3,
+        type: 3}
+      propertyPath: m_Name
+      value: Purple Bird (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 55cb541fd7ff3b34093f4506d6471cc3, type: 3}
 --- !u!1001 &2054434607
 PrefabInstance:
   m_ObjectHideFlags: 0
