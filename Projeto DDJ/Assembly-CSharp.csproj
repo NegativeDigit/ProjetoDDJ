@@ -92,8 +92,11 @@
     <Compile Include="Assets\Scripts\Yeti.cs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\playerHook.cs" />
     <Compile Include="Assets\SliderScript.cs" />
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======

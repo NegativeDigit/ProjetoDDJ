@@ -27,8 +27,11 @@ MonoBehaviour:
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 371
 =======
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
   controlID: 7890
@@ -39,6 +42,9 @@ MonoBehaviour:
   controlID: 138
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -166,7 +172,12 @@ MonoBehaviour:
   vertical: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 372
+=======
+  controlID: 576
+>>>>>>> f51beb320d080c14bb0592611ee7048843c11164
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
   controlID: 576
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
@@ -201,9 +212,12 @@ MonoBehaviour:
   vertical: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 373
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
   controlID: 7867
@@ -211,6 +225,9 @@ MonoBehaviour:
   controlID: 72
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -273,9 +290,12 @@ MonoBehaviour:
       m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ExpandedIDs: b4f6ffff
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
       m_ExpandedIDs: 18efffff34f5ffff9a3f0000d6400000644a0000144c0000e04c0000
@@ -283,6 +303,9 @@ MonoBehaviour:
       m_ExpandedIDs: 6aeeffff30f5ffff
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -377,6 +400,7 @@ MonoBehaviour:
   m_Position:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 90.66296, y: 29.22485, z: -539.05444}
     speed: 2
     m_Value: {x: 90.66296, y: 29.22485, z: -539.05444}
@@ -395,6 +419,16 @@ MonoBehaviour:
 <<<<<<< HEAD
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+    m_Target: {x: 21.64852, y: -2.641337, z: -196.93077}
+    speed: 2
+    m_Value: {x: 21.64852, y: -2.641337, z: -196.93077}
+=======
+    m_Target: {x: 10.985454, y: 0.13675083, z: -164.42686}
+    speed: 2
+    m_Value: {x: 10.985454, y: 0.13675083, z: -164.42686}
+>>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
   m_RenderMode: 0
   m_CameraMode:
@@ -447,6 +481,7 @@ MonoBehaviour:
   m_Size:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 78.47836
     speed: 2
     m_Value: 78.47836
@@ -465,6 +500,16 @@ MonoBehaviour:
 <<<<<<< HEAD
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+    m_Target: 7.7893915
+    speed: 2
+    m_Value: 7.7893915
+=======
+    m_Target: 13.800201
+    speed: 2
+    m_Value: 13.800201
+>>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
   m_Ortho:
     m_Target: 1
@@ -508,6 +553,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 574
     width: 1531
     height: 373
@@ -515,6 +561,8 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 11}
 =======
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
     y: 511
@@ -525,6 +573,9 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
   m_Panes:
   - {fileID: 10}
   - {fileID: 11}
@@ -536,6 +587,7 @@ MonoBehaviour:
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 10}
+<<<<<<< HEAD
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
   m_Panes:
   - {fileID: 10}
@@ -552,6 +604,11 @@ MonoBehaviour:
   m_MinSize: {x: 230, y: 250}
   m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 10}
+  m_Panes:
+  - {fileID: 10}
+  - {fileID: 11}
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
   m_Panes:
   - {fileID: 10}
   - {fileID: 11}
@@ -611,11 +668,14 @@ MonoBehaviour:
   m_FolderTreeState:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 120}
     m_SelectedIDs: 56470000
     m_LastClickedID: 18262
     m_ExpandedIDs: 00000000564300001a4700001c4700001e47000000ca9a3b
 =======
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
     scrollPos: {x: 0, y: 105}
@@ -633,6 +693,9 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000b43e0000b63e0000b83e0000
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -665,9 +728,12 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000564300001a4700001c4700001e47000000ca9a3b
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
     m_ExpandedIDs: 00000000b43e0000b63e0000
@@ -675,6 +741,9 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000b43e0000b63e0000b83e0000
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -704,12 +773,15 @@ MonoBehaviour:
   m_ListAreaState:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: f0440000
     m_LastClickedInstanceID: 17648
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000000000088c00b0022e60900329e0000369e0000
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
     m_SelectedInstanceIDs: 984b0000
@@ -722,6 +794,9 @@ MonoBehaviour:
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
     m_ExpandedInstanceIDs: c6230000aa3b0000000000005e3b000098450000ac4800006a48000006850200c66a03002a3a0000
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -830,9 +905,13 @@ MonoBehaviour:
   vertical: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 257
 =======
 <<<<<<< HEAD
+  controlID: 7861
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
   controlID: 7861
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
@@ -861,8 +940,13 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 389
     height: 631
+=======
+    width: 414
+    height: 633
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
     width: 414
     height: 633
@@ -916,10 +1000,13 @@ MonoBehaviour:
   m_PreviewWindow: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: 17648
   m_LastVerticalScrollValue: 1899
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
   m_LastInspectedObjectInstanceID: 19660
@@ -946,6 +1033,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 631
     width: 389
     height: 316
@@ -953,11 +1041,16 @@ MonoBehaviour:
 =======
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
     y: 633
     width: 414
     height: 314
   m_MinSize: {x: 101, y: 121}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
