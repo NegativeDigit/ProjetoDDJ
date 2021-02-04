@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 661196678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f3ec9beb15953a4680bcbc5443d862c, type: 3}
+  m_Script: {fileID: 11500000, guid: 976574001686810478f6769e1c96b2c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   greenBird: {fileID: 1430718263}
@@ -1932,6 +1932,7 @@ MonoBehaviour:
   rightLimit: 500
   topLimit: 0
   bottomLimit: 0
+  CorridorCenter: {fileID: 0}
   boundsMax: {x: 500, y: 0, z: -10}
   boundsMin: {x: 0, y: 0, z: -10}
 --- !u!114 &894183522
@@ -2589,12 +2590,12 @@ PrefabInstance:
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.92
+      value: -13.3
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.52
+      value: -5.3
       objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469719, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
