@@ -1308,6 +1308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1135617281}
+  dialogueText: {fileID: 1135617282}
 --- !u!114 &277454497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1949,6 +1950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 2097521776}
+  dialogueText: {fileID: 2097521778}
 --- !u!114 &431444644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4005,6 +4007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 817040975}
+  dialogueText: {fileID: 817040977}
 --- !u!114 &788803008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4149,6 +4152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 189123190}
+  dialogueText: {fileID: 189123192}
 --- !u!114 &797431123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4777,6 +4781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 852866402}
+  dialogueText: {fileID: 852866404}
 --- !u!114 &990860071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5871,6 +5876,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1456418523}
+  dialogueText: {fileID: 1456418525}
 --- !u!114 &1238930774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7841,6 +7847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1735071611}
+  dialogueText: {fileID: 1735071613}
 --- !u!114 &1695236915
 MonoBehaviour:
   m_ObjectHideFlags: 0

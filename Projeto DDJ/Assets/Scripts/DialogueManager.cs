@@ -18,9 +18,10 @@ public class DialogueManager : MonoBehaviour
         
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue, Text newDialogueText)
     {
         nameText.text = dialogue.name;
+        dialogueText = newDialogueText;
         sentences.Clear();
         foreach(String i in dialogue.sentences)
         {
