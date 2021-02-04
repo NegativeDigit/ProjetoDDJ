@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
 
     protected virtual void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name.Equals("Player")) {
             gameManager.FailedLevel();
         }

@@ -9,6 +9,7 @@ public class Bird_Script : MonoBehaviour
     public Rigidbody2D player;
     public float speed = 5.0f;
     public float acceptedDist = 30;
+    public bool isAlive = true;
 
     // Update is called once per frame
     void Update()
@@ -18,4 +19,12 @@ public class Bird_Script : MonoBehaviour
         if(distance < acceptedDist)
             bird.transform.Translate(Vector3.left * speed * Time.deltaTime);
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag.Equals("Player") && isAlive)
+            GameObject.Find("GameManager").GetComponent<GameManager>().FailedLevel();
+    }
+
 }

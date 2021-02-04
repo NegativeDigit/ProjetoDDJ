@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2823125606589074796}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: -3.6, z: 0}
+  m_LocalPosition: {x: -14.7, y: -0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2823125607190199311}
@@ -138,6 +138,7 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 2
   maxCount: 500
+  vertical: 1
 --- !u!1 &2823125607190199346
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,6 +150,7 @@ GameObject:
   - component: {fileID: 2823125607190199311}
   - component: {fileID: 2823125607190199344}
   - component: {fileID: 2823125607190199345}
+  - component: {fileID: 3992013908072066442}
   m_Layer: 8
   m_Name: Lightning
   m_TagString: Untagged
@@ -287,11 +289,29 @@ MonoBehaviour:
   EndPosition: {x: 0, y: 0, z: 0}
   Generations: 4
   Duration: 0.2
-  ChaosFactor: 0.2
+  ChaosFactor: 0.05
   ManualMode: 0
   Rows: 1
   Columns: 1
   AnimationMode: 3
+--- !u!68 &3992013908072066442
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2823125607190199346}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -251.5, y: 8.6}
+  - {x: -250.5, y: 8.6}
 --- !u!1 &2823125607270110974
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2823125607270110974}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4, y: 5.7, z: 0}
+  m_LocalPosition: {x: 17.95, y: -0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2823125607190199311}
@@ -528,3 +548,4 @@ MonoBehaviour:
   player: {fileID: 0}
   speed: 2
   maxCount: 500
+  vertical: 1

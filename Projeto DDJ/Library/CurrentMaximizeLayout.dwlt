@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-<<<<<<< HEAD
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -48,6 +48,9 @@ MonoBehaviour:
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+  controlID: 371
+>>>>>>> parent of f9cd608b... cena
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -56,11 +59,11 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
@@ -69,10 +72,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2786
-    y: 706
-    width: 413
-    height: 293
+    x: 1531
+    y: 704
+    width: 388
+    height: 295
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -82,7 +85,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 413, y: 232}
+  m_TargetSize: {x: 388, y: 218}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -97,10 +100,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -206.5
-    m_HBaseRangeMax: 206.5
-    m_VBaseRangeMin: -116
-    m_VBaseRangeMax: 116
+    m_HBaseRangeMin: -194
+    m_HBaseRangeMax: 194
+    m_VBaseRangeMin: -109
+    m_VBaseRangeMax: 109
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -118,23 +121,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 413
-      height: 272
+      width: 388
+      height: 274
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 206.5, y: 136}
+    m_Translation: {x: 194, y: 137}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -206.5
-      y: -136
-      width: 413
-      height: 272
+      x: -194
+      y: -137
+      width: 388
+      height: 274
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 413, y: 293}
+  m_LastWindowPixelSize: {x: 388, y: 295}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -154,22 +157,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 9}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1506
+    width: 1531
     height: 947
-<<<<<<< HEAD
-  m_MinSize: {x: 403, y: 342}
-  m_MaxSize: {x: 8003, y: 8042}
-  vertical: 1
-  controlID: 7891
-=======
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -186,6 +184,9 @@ MonoBehaviour:
   controlID: 576
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+  controlID: 372
+>>>>>>> parent of f9cd608b... cena
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -205,11 +206,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1506
-    height: 511
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    width: 1531
+    height: 574
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -231,6 +233,9 @@ MonoBehaviour:
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+  controlID: 373
+>>>>>>> parent of f9cd608b... cena
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,8 +253,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 383
-    height: 511
+    width: 380
+    height: 574
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
@@ -278,16 +283,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1280
+    x: 0
     y: 73
-    width: 382
-    height: 490
+    width: 379
+    height: 553
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 32}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -309,6 +315,9 @@ MonoBehaviour:
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+      m_ExpandedIDs: b4f6ffff
+>>>>>>> parent of f9cd608b... cena
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -331,7 +340,7 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
-  m_WindowGUID: c814379421c92de42a6621d4689b30f9
+  m_WindowGUID: 9217c4f84bd5baf4cb22784c4441a48c
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,19 +356,16 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 383
+    x: 380
     y: 0
-    width: 1123
-<<<<<<< HEAD
-    height: 511
-=======
-    height: 510
->>>>>>> f51beb320d080c14bb0592611ee7048843c11164
+    width: 1151
+    height: 574
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
+  - {fileID: 9}
   m_Selected: 0
   m_LastSelected: 0
 --- !u!114 &8
@@ -383,14 +389,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1663
+    x: 380
     y: 73
-    width: 1121
-    height: 490
+    width: 1149
+    height: 553
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: bf4e6e3c31dc2f44d9bf93c62b658128
-  m_Gizmos: 0
+  m_WindowGUID: be2ada10ceb2c38488886de9bff5c960
+  m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 1
@@ -398,6 +404,7 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -430,6 +437,11 @@ MonoBehaviour:
     m_Value: {x: 10.985454, y: 0.13675083, z: -164.42686}
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+    m_Target: {x: 90.66296, y: 29.22485, z: -539.05444}
+    speed: 2
+    m_Value: {x: 90.66296, y: 29.22485, z: -539.05444}
+>>>>>>> parent of f9cd608b... cena
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -459,19 +471,19 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
-    m_ShowGrid: 0
+    m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
@@ -479,6 +491,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -511,6 +524,11 @@ MonoBehaviour:
     m_Value: 13.800201
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+    m_Target: 78.47836
+    speed: 2
+    m_Value: 78.47836
+>>>>>>> parent of f9cd608b... cena
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -544,6 +562,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 2048, y: 2048}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 380
+    y: 73
+    width: 1149
+    height: 553
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
@@ -554,12 +598,16 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f9cd608b... cena
     y: 574
     width: 1531
     height: 373
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 11}
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -593,10 +641,12 @@ MonoBehaviour:
   - {fileID: 10}
   - {fileID: 11}
 =======
+=======
+>>>>>>> parent of f9cd608b... cena
   m_Panes:
-  - {fileID: 10}
   - {fileID: 11}
   - {fileID: 12}
+<<<<<<< HEAD
   m_Selected: 2
   m_LastSelected: 0
 =======
@@ -613,10 +663,11 @@ MonoBehaviour:
   - {fileID: 10}
   - {fileID: 11}
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+>>>>>>> parent of f9cd608b... cena
   m_Selected: 0
   m_LastSelected: 1
->>>>>>> f51beb320d080c14bb0592611ee7048843c11164
---- !u!114 &10
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -637,10 +688,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1280
-    y: 584
-    width: 1505
-    height: 415
+    x: 0
+    y: 647
+    width: 1530
+    height: 352
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -661,18 +712,21 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
-<<<<<<< HEAD
-  m_LastProjectPath: C:\Users\CMS\Desktop\Mestrado\DDJ\ProjetoDDJ\Projeto DDJ
+  m_LastProjectPath: C:\Users\1\Documents\GitHub\ProjetoDDJ\Projeto DDJ
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f9cd608b... cena
     scrollPos: {x: 0, y: 120}
     m_SelectedIDs: 56470000
     m_LastClickedID: 18262
     m_ExpandedIDs: 00000000564300001a4700001c4700001e47000000ca9a3b
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -699,6 +753,8 @@ MonoBehaviour:
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+>>>>>>> parent of f9cd608b... cena
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -714,7 +770,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -726,6 +782,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -747,6 +804,9 @@ MonoBehaviour:
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+    m_ExpandedIDs: 00000000564300001a4700001c4700001e47000000ca9a3b
+>>>>>>> parent of f9cd608b... cena
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -774,10 +834,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f9cd608b... cena
     m_SelectedInstanceIDs: f0440000
     m_LastClickedInstanceID: 17648
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300000000000088c00b0022e60900329e0000369e0000
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -800,6 +864,8 @@ MonoBehaviour:
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+>>>>>>> parent of f9cd608b... cena
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -815,7 +881,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -826,33 +892,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 397
---- !u!114 &11
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 1280
-    y: 584
-    width: 1505
-    height: 415
-  m_ViewDataDictionary: {fileID: 0}
+  m_DirectoriesAreaWidth: 268
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -861,7 +901,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_EditorHideFlags: 1
   m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -874,10 +914,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1280
-    y: 584
-    width: 1505
-    height: 415
+    x: 0
+    y: 647
+    width: 1530
+    height: 352
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
@@ -896,13 +936,14 @@ MonoBehaviour:
   - {fileID: 16}
   m_Position:
     serializedVersion: 2
-    x: 1506
+    x: 1531
     y: 0
-    width: 414
+    width: 389
     height: 947
-  m_MinSize: {x: 276, y: 192}
-  m_MaxSize: {x: 4001, y: 8042}
+  m_MinSize: {x: 275, y: 271}
+  m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -917,11 +958,10 @@ MonoBehaviour:
 =======
   controlID: 7861
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
---- !u!114 &14
 =======
-  controlID: 139
---- !u!114 &13
->>>>>>> f51beb320d080c14bb0592611ee7048843c11164
+  controlID: 257
+>>>>>>> parent of f9cd608b... cena
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -941,6 +981,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 389
     height: 631
 =======
@@ -955,6 +996,10 @@ MonoBehaviour:
     width: 414
     height: 633
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+    width: 389
+    height: 631
+>>>>>>> parent of f9cd608b... cena
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -983,10 +1028,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2786
+    x: 1531
     y: 73
-    width: 413
-    height: 612
+    width: 388
+    height: 610
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -998,6 +1043,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1015,6 +1061,10 @@ MonoBehaviour:
 >>>>>>> f51beb320d080c14bb0592611ee7048843c11164
   m_LastVerticalScrollValue: 0
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+  m_LastInspectedObjectInstanceID: 17648
+  m_LastVerticalScrollValue: 1899
+>>>>>>> parent of f9cd608b... cena
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1034,10 +1084,14 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f9cd608b... cena
     y: 631
     width: 389
     height: 316
   m_MinSize: {x: 201, y: 221}
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
@@ -1054,6 +1108,8 @@ MonoBehaviour:
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
 =======
 >>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
+=======
+>>>>>>> parent of f9cd608b... cena
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:

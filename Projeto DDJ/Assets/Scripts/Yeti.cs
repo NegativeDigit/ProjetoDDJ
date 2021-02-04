@@ -66,7 +66,6 @@ void Update()
     private void OnTriggerEnter2D(Collider2D collision)
     {
         entered = true;
-        GameObject.Find("MainCamera").GetComponent<CameraFollow>().setCameraToCorridor();
     }
 
 
@@ -75,7 +74,6 @@ void Update()
         base.OnCollisionEnter2D(collision);
         if (collision.gameObject.tag.Equals("Falling_Obstacle")) {
             Destroy(this.gameObject);
-            GameObject.Find("MainCamera").GetComponent<CameraFollow>().setCameraToPlayer();
         }
     }
 
