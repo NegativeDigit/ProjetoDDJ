@@ -89,22 +89,8 @@
     <Compile Include="Assets\Scripts\Snowman.cs" />
     <Compile Include="Assets\Scripts\TriggerScript.cs" />
     <Compile Include="Assets\Scripts\Yeti.cs" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\playerHook.cs" />
     <Compile Include="Assets\SliderScript.cs" />
-=======
->>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
-=======
->>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
-=======
->>>>>>> parent of d5ffadb1... Revert "Merge branch 'master' of https://github.com/NegativeDigit/ProjetoDDJ"
-=======
-    <Compile Include="Assets\Scripts\playerHook.cs" />
-    <Compile Include="Assets\SliderScript.cs" />
->>>>>>> parent of f9cd608b... cena
     <Compile Include="Assets\SnowBall.cs" />
     <Compile Include="Assets\lighting.cs" />
     <Compile Include="Assets\playerhook.cs" />
