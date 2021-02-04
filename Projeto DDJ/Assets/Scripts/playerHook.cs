@@ -161,7 +161,7 @@ public class PlayerHook : MonoBehaviour
                     if(hit.collider.tag.Equals("Bird"))
                     {
                         hit.collider.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
-                        if(hit.collider.name.Equals("Blue_Bird"))
+                        if(hit.collider.name.StartsWith("Blue_Bird"))
                         {
                             hit.collider.gameObject.GetComponent<Blue_Bird_Script>().isAlive = false;
                         }
