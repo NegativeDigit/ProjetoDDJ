@@ -160,27 +160,10 @@ public class PlayerHook : MonoBehaviour
 
                     if(hit.collider.tag.Equals("Bird"))
                     {
+                        hit.collider.gameObject.GetComponent<Bird_Script>().enabled = false;
+                        if(hit.collider.gameObject.name == "Blue_Bird")
+                            hit.collider.gameObject.GetComponent<Blue_Bird_Script>().enabled = false;
                         hit.collider.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
-                        if(hit.collider.name.Equals("Blue_Bird"))
-                        {
-                            hit.collider.gameObject.GetComponent<Blue_Bird_Script>().isAlive = false;
-                        }
-                        else if (hit.collider.gameObject.name.StartsWith("Small_Green_Bird"))
-                        {
-                            hit.collider.gameObject.GetComponent<Small_Green_Bird_Script>().isAlive = false;
-                        }
-                        else
-                        {
-                            hit.collider.gameObject.GetComponent<Bird_Script>().isAlive = false;
-                        }
-                    }
-
-                    if (hit.collider.tag.Equals("Boss_Bird"))
-                    {
-                        if (hit.collider.gameObject.transform.position.y == 8)
-                        {
-                            hit.collider.gameObject.GetComponent<Green_Bird_Script>().hp--;
-                        }
                     }
 
                     if (hit.collider.tag.Equals("Falling_Obstacle"))

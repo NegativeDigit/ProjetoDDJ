@@ -9,8 +9,6 @@ TagManager:
   - Falling_Obstacle
   - Spike
   - Undestroyable_by_hook
-  - Bird
-  - Boss_Bird
   layers:
   - Default
   - TransparentFX
