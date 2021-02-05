@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Blue_Bird_Script.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollowSkyLevel.cs" />
+    <Compile Include="Assets\Scripts\CanvasScript.cs" />
     <Compile Include="Assets\Scripts\Cloud_Script.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />
@@ -85,15 +86,16 @@
     <Compile Include="Assets\Scripts\Lightning.cs" />
     <Compile Include="Assets\Scripts\NextLevel.cs" />
     <Compile Include="Assets\Scripts\PlataformScript.cs" />
+    <Compile Include="Assets\Scripts\PlayerHook.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerPortal.cs" />
+    <Compile Include="Assets\Scripts\ScrollScript.cs" />
     <Compile Include="Assets\Scripts\SliderScript.cs" />
     <Compile Include="Assets\Scripts\Small_Blue_Bird_Script.cs" />
     <Compile Include="Assets\Scripts\Small_Green_Bird_Script.cs" />
     <Compile Include="Assets\Scripts\Snowman.cs" />
     <Compile Include="Assets\Scripts\TriggerScript.cs" />
     <Compile Include="Assets\Scripts\Yeti.cs" />
-    <Compile Include="Assets\Scripts\playerHook.cs" />
     <Compile Include="Assets\SnowBall.cs" />
     <Compile Include="Assets\lighting.cs" />
     <Compile Include="Assets\script.cs" />
