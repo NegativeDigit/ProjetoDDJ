@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         if (SceneManager.GetActiveScene().name.Equals("Ice_Level")) {
-            GameObject.Find("FallBlock").GetComponent<EdgeCollider2D>().enabled = false;
+          //  GameObject.Find("FallBlock").GetComponent<EdgeCollider2D>().enabled = false;
         }
 
     }
