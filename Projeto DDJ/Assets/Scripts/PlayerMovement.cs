@@ -147,6 +147,15 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("CameraObject"))
+        {
+            GameObject.Find("MainCamera").GetComponent<CameraFollow>().setLeftBoundary();
+        }
+    }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         //GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
@@ -162,6 +171,8 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Enemy") {
             gameManager.FailedLevel();
         }
+
+       
 
         if (collision.gameObject.layer == 13)// fim
         {

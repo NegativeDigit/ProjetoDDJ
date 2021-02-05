@@ -32,5 +32,6 @@ public class Small_Blue_Bird_Script : MonoBehaviour
         count++;
 
         Physics2D.IgnoreCollision(smallBlueBird.GetComponent<CircleCollider2D>(), blueBird.GetComponent<EdgeCollider2D>());
+        Physics2D.IgnoreCollision(smallBlueBird.GetComponent<CircleCollider2D>(), GameObject.Find("Floor").GetComponent<BoxCollider2D>());
     }
 }

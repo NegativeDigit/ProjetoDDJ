@@ -29,6 +29,8 @@ public class Small_Green_Bird_Script : MonoBehaviour
             Destroy(smallGreenBird);
         }
         count++;
+
+        Physics2D.IgnoreCollision(smallGreenBird.GetComponent<EdgeCollider2D>(), GameObject.Find("Floor").GetComponent<BoxCollider2D>());
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

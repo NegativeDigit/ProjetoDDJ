@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class Enemy : MonoBehaviour
     protected virtual void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        if (SceneManager.GetActiveScene().name.Equals("Ice_Level")) {
+            GameObject.Find("FallBlock").GetComponent<EdgeCollider2D>().enabled = false;
+        }
 
     }
 

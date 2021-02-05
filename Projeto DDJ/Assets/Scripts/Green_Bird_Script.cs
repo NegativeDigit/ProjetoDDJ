@@ -43,6 +43,7 @@ public class Green_Bird_Script : MonoBehaviour
         {
             bossFinish = true;
             greenBird.GetComponent<Rigidbody2D>().gravityScale = 1;
+            greenBird.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             exitDoor.position = Vector2.MoveTowards(exitDoor.position, target, 1);
         }
 
@@ -100,8 +101,10 @@ public class Green_Bird_Script : MonoBehaviour
                     }
                 }
             }
-
+            Physics2D.IgnoreCollision(greenBird.GetComponent<CircleCollider2D>(), GameObject.Find("Floor").GetComponent<BoxCollider2D>());
         }
+
+        
     }
 
     public void CreateObject()

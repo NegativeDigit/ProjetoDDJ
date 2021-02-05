@@ -43,6 +43,8 @@ public class Blue_Bird_Script : MonoBehaviour
                 }
             }
         }
+
+        Physics2D.IgnoreCollision(blueBird.GetComponent<EdgeCollider2D>(), GameObject.Find("Floor").GetComponent<BoxCollider2D>());
     }
 
     public void CreateObject()

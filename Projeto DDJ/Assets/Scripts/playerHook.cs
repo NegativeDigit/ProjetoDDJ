@@ -169,6 +169,10 @@ public class PlayerHook : MonoBehaviour
                         {
                             hit.collider.gameObject.GetComponent<Small_Green_Bird_Script>().isAlive = false;
                         }
+                        else if (hit.collider.gameObject.name.StartsWith("Small_Blue_Bird"))
+                        {
+                            hit.collider.gameObject.GetComponent<Small_Blue_Bird_Script>().speed = 5f;
+                        }
                         else
                         {
                             hit.collider.gameObject.GetComponent<Bird_Script>().isAlive = false;
