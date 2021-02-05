@@ -6359,6 +6359,11 @@ PrefabInstance:
       propertyPath: ropeLayerMask.m_Bits
       value: 4096
       objectReference: {fileID: 0}
+    - target: {fileID: 5839220095838784881, guid: 3791fd152e61ffd468b3d3b502b0bd27,
+        type: 3}
+      propertyPath: ropeLayerMask.m_Bits
+      value: 36864
+      objectReference: {fileID: 0}
     - target: {fileID: 6057870334901469706, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_Name
@@ -6444,7 +6449,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6733801492486031059, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
 --- !u!1001 &1018469463
 PrefabInstance:
@@ -7044,7 +7050,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1077944532}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d2214dc69f417d143be3ff95266d3689, type: 3}
   m_Name: 
@@ -12391,6 +12397,7 @@ MonoBehaviour:
   topLimit: 0
   bottomLimit: 0
   CorridorCenter: {fileID: 0}
+  LeftBoundary: {fileID: 0}
   boundsMax: {x: 500, y: 0, z: 0}
   boundsMin: {x: -0.62, y: 0, z: 0}
 --- !u!114 &1825338819

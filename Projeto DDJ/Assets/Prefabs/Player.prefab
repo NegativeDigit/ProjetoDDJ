@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 6057870334901469713}
   - component: {fileID: 955863276}
   - component: {fileID: 955863277}
-  - component: {fileID: -6733801492486031059}
+  - component: {fileID: 5839220095838784881}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -506,7 +506,7 @@ MonoBehaviour:
   objectToBeCreated: {fileID: 6672743673453700370, guid: 6a8519c099927494fb4d89e1bed9b135,
     type: 3}
   platformTimer: 3
---- !u!114 &-6733801492486031059
+--- !u!114 &5839220095838784881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -515,11 +515,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6057870334901469706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfbfb5cb61d48474498699c8d0bf48d6, type: 3}
+  m_Script: {fileID: 11500000, guid: b85a28e29825b964b86bcf65a1a43be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ropeLayerMask:
     serializedVersion: 2
-    m_Bits: 36864
+    m_Bits: 0
   climbSpeed: 3
   ropeMaxCastDistance: 15

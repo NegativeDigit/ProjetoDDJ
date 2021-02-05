@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -17684,7 +17684,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6733801492486031059, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3791fd152e61ffd468b3d3b502b0bd27, type: 3}
 --- !u!1 &334314523
 GameObject:
@@ -85371,6 +85372,7 @@ MonoBehaviour:
   topLimit: 20.68
   bottomLimit: 0
   CorridorCenter: {fileID: 1569471169}
+  LeftBoundary: {fileID: 0}
   boundsMax: {x: 0, y: 0, z: 0}
   boundsMin: {x: 0, y: 0, z: 0}
 --- !u!114 &1512362364
@@ -90059,6 +90061,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 333560440}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1591492084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591492083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85a28e29825b964b86bcf65a1a43be3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ropeLayerMask:
+    serializedVersion: 2
+    m_Bits: 36864
+  climbSpeed: 3
+  ropeMaxCastDistance: 15
 --- !u!120 &1591492087 stripped
 LineRenderer:
   m_CorrespondingSourceObject: {fileID: 6057870334901469713, guid: 3791fd152e61ffd468b3d3b502b0bd27,

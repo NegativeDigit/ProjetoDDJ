@@ -556,6 +556,11 @@ PrefabInstance:
       propertyPath: ropeLayerMask.m_Bits
       value: 4096
       objectReference: {fileID: 0}
+    - target: {fileID: 5839220095838784881, guid: 3791fd152e61ffd468b3d3b502b0bd27,
+        type: 3}
+      propertyPath: ropeLayerMask.m_Bits
+      value: 36864
+      objectReference: {fileID: 0}
     - target: {fileID: 6057870334171323985, guid: 3791fd152e61ffd468b3d3b502b0bd27,
         type: 3}
       propertyPath: m_BodyType

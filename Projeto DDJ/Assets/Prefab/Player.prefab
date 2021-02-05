@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 7601154578056146152}
   - component: {fileID: 9054760397582961387}
   - component: {fileID: 3957317597253666792}
-  - component: {fileID: 8458677805279440048}
+  - component: {fileID: 3796666574529067098}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -400,12 +400,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b4572f52e3f66a4797d7760a1a26229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crosshair: {fileID: 7601154577402098223}
-  crosshairSprite: {fileID: 7601154577402098222}
   objectToBeCreated: {fileID: 6672743673453700370, guid: 6a8519c099927494fb4d89e1bed9b135,
     type: 3}
   platformTimer: 3
---- !u!114 &8458677805279440048
+--- !u!114 &3796666574529067098
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -414,18 +412,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5472289196515243661}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfbfb5cb61d48474498699c8d0bf48d6, type: 3}
+  m_Script: {fileID: 11500000, guid: b85a28e29825b964b86bcf65a1a43be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ropeRenderer: {fileID: 7601154578056146152}
   ropeLayerMask:
     serializedVersion: 2
-    m_Bits: 36864
-  climbSpeed: 10
-  ropeHingeAnchor: {fileID: 7601154576804091239}
-  ropeJoint: {fileID: 7601154578056146153}
-  crosshair: {fileID: 7601154577402098223}
-  crosshairSprite: {fileID: 7601154577402098222}
+    m_Bits: 0
+  climbSpeed: 3
   ropeMaxCastDistance: 15
 --- !u!1 &7601154576804091239
 GameObject:

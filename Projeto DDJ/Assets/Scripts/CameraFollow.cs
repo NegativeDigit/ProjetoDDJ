@@ -56,7 +56,7 @@ public class CameraFollow : MonoBehaviour
             Debug.Log(checkforLeft);
             if (checkforLeft)
             {
-                gameObject.transform.position = new Vector3(LeftBoundary.position.x,LeftBoundary.position.y,
+                gameObject.transform.position = new Vector3(LeftBoundary.position.x, LeftBoundary.position.y,
                     LeftBoundary.position.z);
             }
             else

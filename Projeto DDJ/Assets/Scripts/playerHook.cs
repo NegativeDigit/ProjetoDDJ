@@ -158,10 +158,10 @@ public class PlayerHook : MonoBehaviour
                 if (hit.collider != null)
                 {
 
-                    if(hit.collider.tag.Equals("Bird"))
+                    if (hit.collider.tag.Equals("Bird"))
                     {
                         hit.collider.gameObject.GetComponent<Rigidbody2D>().gravityScale = 1;
-                        if(hit.collider.name.StartsWith("Blue_Bird"))
+                        if (hit.collider.name.StartsWith("Blue_Bird"))
                         {
                             hit.collider.gameObject.GetComponent<Blue_Bird_Script>().isAlive = false;
                         }
@@ -192,27 +192,29 @@ public class PlayerHook : MonoBehaviour
                         Debug.Log(hit.collider.transform.GetComponent<Rigidbody2D>().isKinematic);
                         hit.collider.GetComponent<Rigidbody2D>().isKinematic = false;
                         return;
-                    }else
+                    }
+                    else
                     if (hit.collider.tag.Equals("Enemy"))
                     {
                         Destroy(hit.collider.gameObject);
                     }
-                    else {
-                       //ropeHingeAnchor.transform.parent = hit.collider.transform;
-
-                    playerMovement.enabled = true;
-                    ropeAttached = true;
-                    if (!ropePositions.Contains(hit.point))
+                    else
                     {
+                        //ropeHingeAnchor.transform.parent = hit.collider.transform;
+
+                        playerMovement.enabled = true;
+                        ropeAttached = true;
+                        if (!ropePositions.Contains(hit.point))
+                        {
                             // Jump slightly to distance the player a little from the ground after grappling to something.
                             currentHookedObj = hit.collider.gameObject;
-                        transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
-                        ropePositions.Add(hit.point);
-                        wrapPointsLookup.Add(hit.point, 0);
-                        ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
-                        ropeJoint.enabled = true;
-                        ropeHingeAnchorSprite.enabled = true;
-                    }
+                            transform.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, 2f), ForceMode2D.Impulse);
+                            ropePositions.Add(hit.point);
+                            wrapPointsLookup.Add(hit.point, 0);
+                            ropeJoint.distance = Vector2.Distance(playerPosition, hit.point);
+                            ropeJoint.enabled = true;
+                            ropeHingeAnchorSprite.enabled = true;
+                        }
                     }
                 }
                 else
@@ -364,7 +366,7 @@ public class PlayerHook : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D colliderStay)
     {
-        if(!colliderStay.gameObject.tag.Equals("Undestroyable_by_hook"))
+        if (!colliderStay.gameObject.tag.Equals("Undestroyable_by_hook"))
             isColliding = true;
 
     }
