@@ -67,6 +67,7 @@ void Update()
     {
         entered = true;
         GameObject.Find("MainCamera").GetComponent<CameraFollow>().setCameraToCorridor();
+        GameObject.Find("FallBlock").GetComponent<EdgeCollider2D>().enabled = true;
     }
 
 

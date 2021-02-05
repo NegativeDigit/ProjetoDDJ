@@ -11,6 +11,7 @@ TagManager:
   - Undestroyable_by_hook
   - Bird
   - Boss_Bird
+  - CameraObject
   layers:
   - Default
   - TransparentFX
