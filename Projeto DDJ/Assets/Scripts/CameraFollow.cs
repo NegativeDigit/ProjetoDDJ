@@ -29,8 +29,13 @@ public class CameraFollow : MonoBehaviour
     private bool setToCorridor;
     [SerializeField] Transform CorridorCenter;
 
+    [SerializeField] Transform LeftBoundary;
+    private bool checkforLeft = false;
+
     public Vector3 boundsMax;
     public Vector3 boundsMin;
+   
+
     void Update()
     {
         if (!setToCorridor)
@@ -48,14 +53,23 @@ public class CameraFollow : MonoBehaviour
             endPos.z = -10;
 
             transform.position = Vector3.Lerp(startPos, endPos, timeOffset * Time.deltaTime);
-            transform.position = new Vector3
-                (
-                Mathf.Clamp(transform.position.x, leftLimit, rightLimit),
-                Mathf.Clamp(transform.position.y, bottomLimit, topLimit),
-                transform.position.z
-                );
+            Debug.Log(checkforLeft);
+            if (checkforLeft)
+            {
+                gameObject.transform.position = new Vector3(LeftBoundary.position.x,LeftBoundary.position.y,
+                    LeftBoundary.position.z);
+            }
+            else
+            {
+                transform.position = new Vector3
+                    (
+                    Mathf.Clamp(transform.position.x, leftLimit, rightLimit),
+                    Mathf.Clamp(transform.position.y, bottomLimit, topLimit),
+                    transform.position.z
+                    );
 
-            // transform.position = new Vector3 (Mathf.Clamp (transform.position.x, boundsMin.x, boundsMax.x), Mathf.Clamp (transform.position.y, boundsMin.y, boundsMax.y), Mathf.Clamp (transform.position.z, boundsMin.z, boundsMax.z));
+                // transform.position = new Vector3 (Mathf.Clamp (transform.position.x, boundsMin.x, boundsMax.x), Mathf.Clamp (transform.position.y, boundsMin.y, boundsMax.y), Mathf.Clamp (transform.position.z, boundsMin.z, boundsMax.z));
+            }
         }
     }
 
@@ -83,5 +97,10 @@ public class CameraFollow : MonoBehaviour
     internal void setCameraToPlayer()
     {
         setToCorridor = false;
+    }
+
+    internal void setLeftBoundary()
+    {
+        checkforLeft = !checkforLeft;
     }
 }
