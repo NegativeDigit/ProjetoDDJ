@@ -33,30 +33,24 @@ public class CameraFollowSkyLevel : MonoBehaviour
     public Vector3 boundsMin;
     void Update()
     {
-        if (!setToCorridor)
-        {
-            if (player.transform.position.y > 5.133107)
-            {
-                leftLimit = (float)-23.24006;
-                bottomLimit = (float)-1.796795;
-            }
-            Vector3 startPos = transform.position;
-            Vector3 endPos = player.transform.position;
+        
+        Vector3 startPos = this.gameObject.transform.position;
+        Vector3 endPos = player.transform.position;
 
-            endPos.x += posOffset.x;
-            endPos.y += posOffset.y;
-            endPos.z = -10;
+        endPos.x += posOffset.x;
+        endPos.y += posOffset.y;
+        endPos.z = -10;
 
-            transform.position = Vector3.Lerp(startPos, endPos, timeOffset * Time.deltaTime);
-            transform.position = new Vector3
-                (
-                Mathf.Clamp(transform.position.x, leftLimit, rightLimit),
-                Mathf.Clamp(transform.position.y, bottomLimit, topLimit),
-                transform.position.z
-                );
+        this.gameObject.transform.position = Vector3.Lerp(startPos, endPos, timeOffset * Time.deltaTime);
+        this.gameObject.transform.position = new Vector3
+            (
+            Mathf.Clamp(this.gameObject.transform.position.x, leftLimit, rightLimit),
+            Mathf.Clamp(this.gameObject.transform.position.y, bottomLimit, topLimit),
+            transform.position.z
+            );
 
-             transform.position = new Vector3 (Mathf.Clamp (transform.position.x, boundsMin.x, boundsMax.x), Mathf.Clamp (transform.position.y, boundsMin.y, boundsMax.y), Mathf.Clamp (transform.position.z, boundsMin.z, boundsMax.z));
-        }
+            //transform.position = new Vector3 (Mathf.Clamp (transform.position.x, boundsMin.x, boundsMax.x), Mathf.Clamp (transform.position.y, boundsMin.y, boundsMax.y), Mathf.Clamp (transform.position.z, boundsMin.z, boundsMax.z));
+       
     }
 
 

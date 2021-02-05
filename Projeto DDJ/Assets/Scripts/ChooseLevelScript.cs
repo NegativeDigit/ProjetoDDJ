@@ -7,6 +7,25 @@ public class ChooseLevelScript : MonoBehaviour
 {
     public void SkyLevel()
     {
-        SceneManager.LoadScene("Air_Level");
+        Debug.Log(SceneManager.sceneCount);
+        SceneManager.LoadScene(2);
+    }
+
+    public void IceLevel()
+    {
+        Debug.Log(SceneManager.sceneCount);
+        SceneManager.LoadScene(3);
+    }
+
+    public void LavaLevel()
+    {
+        Debug.Log(SceneManager.sceneCount);
+        SceneManager.LoadScene(4);
+    }
+
+    public void TutorialLevel()
+    {
+        Debug.Log(SceneManager.sceneCount);
+        SceneManager.LoadScene(1);
     }
 }
