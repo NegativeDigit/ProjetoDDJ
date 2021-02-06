@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6341641463576903777}
   - component: {fileID: 6341641463576903776}
   - component: {fileID: 6341641463576903807}
-  - component: {fileID: 6341641463576903806}
+  - component: {fileID: 8776023193833491767}
   m_Layer: 0
   m_Name: snowball
   m_TagString: Enemy
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0.0599779, y: 0.00069581997}
   serializedVersion: 2
   m_Radius: 3.8394208
---- !u!114 &6341641463576903806
+--- !u!114 &8776023193833491767
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
