@@ -19,6 +19,6 @@ public class NextLevel : MonoBehaviour
 
     public void NextLevelStart(){
         Debug.Log(SceneManager.sceneCount);
-        SceneManager.LoadScene(SceneManager.sceneCount +1);
+        SceneManager.LoadScene("Menu");
     }
 }
